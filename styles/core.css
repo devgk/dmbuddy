@@ -7,27 +7,32 @@ overflow-x: hidden;
 color: #555;
 }
 
-.pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+.loadingScreen{
+display: block;
+width: 100%;
+height: 100%;
+position: fixed;
+background-color: #f4f4f4;
+z-index: 99999;
+opacity: 1;
+transition: all .15s linear;
 }
 
-.pace-inactive {
-  display: none;
-}
-
-.pace .pace-progress {
-  background: #0086B5;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 100%;
-  width: 100%;
-  height: 2px;
+.loadingScreen p{
+background-color: #0079A3;
+width: 160px;
+line-height: 18px;
+padding: 12px 0;
+text-align: center;
+margin: 0;
+color: #f7f7f7;
+border-radius: 4px;
+font-weight: bold;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -30px;
+margin-left: -80px;
 }
 
 .header{
