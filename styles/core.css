@@ -1,0 +1,113 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'PT Sans';
+letter-spacing: 1px;
+overflow-x: hidden;
+color: #555;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #0086B5;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.header{
+position: fixed;
+width: 100%;
+height: 60px;
+padding: 0;
+display: block;
+background-color: #0086B5;
+top: 0;
+left: 0;
+z-index: 9999;
+}
+
+.logo,
+.navMenuLeft,
+.navMenuRight {
+height: 60px;
+text-align: center;
+line-height: 60px;
+color: rgba(255,255,255,0.95);
+font-weight: bold;
+}
+
+.logo{
+display: block;
+width: 150px;
+margin: 0 auto;
+font-size: 140%;
+}
+
+.navMenuLeft {
+width: 140px;
+position: absolute;
+float: left;
+background-color: rgba(0,0,0,0.1);
+cursor: pointer;
+}
+
+.opened{
+display: none;
+}
+
+.headerLeft{
+position: fixed;
+display: block;
+width: 220px;
+min-height: 100%;
+background-color: #eee;
+padding: 61px 0 0;
+box-shadow: 0 0 30px #ccc inset;
+margin-left: -220px;
+transition: all .2s ease;
+}
+
+.headerLeft .menu{
+display: block;
+line-height: 50px;
+padding-left: 5px;
+margin: 1px 0;
+background: rgba(0,0,0,0.05);
+text-transform: uppercase;
+font-weight: bold;
+color: #666;
+cursor: pointer;
+z-index: 99;
+}
+
+.bodyBase{
+display: block;
+width: 100%;
+min-height: 100%;
+background-color: #f7f7f7;
+padding-top: 100px;
+margin-left: 0px;
+z-index: 99;
+transition: all .2s ease;
+}
+
+.contentBox{
+text-align: justify;
+margin: 0 10px;
+}
