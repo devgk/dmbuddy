@@ -28,21 +28,42 @@ opacity: 1;
 transition: all .15s linear;
 }
 
-.loadingScreen p{
-background-color: #0079A3;
-width: 160px;
-line-height: 18px;
-padding: 12px 0;
-text-align: center;
+.loadingScreen .outcir{
+width: 60px;
+height: 60px;
 margin: 0;
-color: #f7f7f7;
-border-radius: 4px;
+border: 6px solid #FBD75B;
+border-radius: 50%;
 font-weight: bold;
 position: absolute;
 top: 50%;
 left: 50%;
-margin-top: -30px;
-margin-left: -80px;
+margin-top: -33px;
+margin-left: -33px;
+box-shadow: 0 0 6px #555;
+z-index: 99;
+}
+
+.loadingScreen .incir{
+width: 60px;
+height: 60px;
+margin: 0;
+border: 6px dashed #0079A3;
+border-radius: 50%;
+font-weight: bold;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -33px;
+margin-left: -33px;
+box-shadow: 0 0 6px #555 inset;
+z-index: 999;
+animation: cirRot 1s linear infinite;
+}
+
+@keyframes cirRot{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 
 .header{
