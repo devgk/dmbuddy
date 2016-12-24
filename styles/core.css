@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url(styles/PT_Sans-Web-Regular.ttf);
+}
+@font-face {
+   font-family: 'PT Sans', sans-serif;
+   src: url(styles/PT_Sans-Web-Blod.ttf);
+   font-weight: bold;
+}
+
 body{
 margin: 0;
 padding: 0;
