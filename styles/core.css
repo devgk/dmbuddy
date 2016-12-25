@@ -8,6 +8,10 @@
    font-weight: bold;
 }
 
+body p{
+margin: 0;
+}
+
 body{
 margin: 0;
 padding: 0;
@@ -15,6 +19,7 @@ font-family: 'PT Sans';
 letter-spacing: 1px;
 overflow-x: hidden;
 color: #555;
+padding-top: 60px;
 }
 
 .loadingScreen{
@@ -113,7 +118,7 @@ display: block;
 width: 220px;
 min-height: 100%;
 background-color: #eee;
-padding: 61px 0 0;
+padding: 1px 0 0;
 box-shadow: 0 0 30px #ccc inset;
 margin-left: -220px;
 transition: all .2s ease;
@@ -137,13 +142,171 @@ display: block;
 width: 100%;
 min-height: 100%;
 background-color: #f7f7f7;
-padding-top: 100px;
 margin-left: 0px;
 z-index: 99;
 transition: all .2s ease;
 }
 
+/*----------------------------------------------------*/
+.chapterTitle {
+display: block;
+width: 100%;
+height: auto;
+min-height: 50px;
+overflow: visible;
+padding: 0;
+background-color: #FBD75B;
+}
+
+.chapterTitlex{
+font-family: inherit;
+font-size: 16px;
+color: #555;
+padding: 2px 6px;
+border-radius: 4px;
+font-weight: bold;   
+}
+
+.chapterx{
+text-transform: uppercase;
+padding: 2px 6px;
+background-color: #555;
+color: #eee;
+border-radius: 4px;
+font-weight: bold;
+}
+
+.chapterTitle p{
+display: block;
+min-height: 50px;
+line-height: 50px;
+font-weight: bold;
+padding: 0;
+margin: 0;
+background-color: #FBD75B;
+}
+
+.chapterTitle img{
+display: block;
+float: right;
+width: 50px;
+height: 50px;
+}
+
+.gridMain{
+max-width: 720px;
+margin: 0 auto;
+padding: 0 5px;
+}
+
 .contentBox{
 text-align: justify;
-margin: 0 10px;
+padding: 15px 0 30PX;
+}
+
+/*-----------------------------------------*/
+
+.previousArticle, .nextArticle{
+width: 49%;
+height: 50px;
+display: inline-block;
+margin: 6px 0 2px;
+background-color: FBD75B;
+box-shadow: 0 0 5px #888;
+border-radius: 4px;
+}
+
+/*-----------------------------------------*/
+.chapterNavigation{
+display: block;
+width: 100%;
+height: auto;
+min-height: 50px;
+overflow: visible;
+padding: 0;
+}
+
+.chapterList{
+display: block;
+width: 100%;
+height: auto;
+min-height: 50px;
+overflow: visible;
+padding: 0;
+background-color: #0086B5;
+}
+
+.chapterList p{
+line-height: 50px;
+text-align: center;
+font-size: 140%;
+margin: 0;
+font-weight: bold;
+color: rgba(255,255,255,0.95);
+}
+
+.adBackground{
+display: block;
+width: 100%;
+min-height: 50px;
+padding: 0;
+background-color: #f4f4f4;
+background: repeating-linear-gradient(
+  135deg,
+  #f4f4f4,
+  #f4f4f4 10px,
+  #eeeeee 10px,
+  #eeeeee 20px
+);
+}
+
+/*--------------------------------------------------*/
+.accordionBase{
+background-color: #f7f7f7;
+padding-bottom: 5px;
+}
+
+button.accordion {
+background-color: #ccc;
+cursor: pointer;
+padding: 18px;
+margin: 5px 0 0;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+transition: 0.4s;
+border-radius: 2px;
+}
+
+button.accordion.active, button.accordion:hover {
+background-color: FBD75B; 
+}
+
+div.panel p{
+margin: 0;
+}
+
+div.panel {
+padding: 0 10px;
+margin: 0;
+display: none;
+}
+
+.topics li{
+background-color: #eee;
+color: #555;
+padding: 5px;
+margin: 5px 0;
+border-radius: 2px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.topics li:hover{
+background-color: #FBD75B; 
+}
+
+div.panel.show {
+display: block;
 }
