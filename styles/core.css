@@ -19,6 +19,14 @@ position: fixed;
 -webkit-perspective: 1000;
 }
 
+.transtionElement{
+transition: all .2s;
+-webkit-transition: all .2s;
+-webkit-transform: translate3d(0, 0, 0);
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+}
+
 body{
 margin: 0;
 padding: 0;
@@ -125,7 +133,6 @@ background-color: #eee;
 padding: 1px 0 0;
 box-shadow: 0 0 30px #ccc inset;
 margin-left: -220px;
-transition: all .2s ease;
 }
 
 .headerLeft .menu{
@@ -148,7 +155,6 @@ min-height: 100%;
 background-color: #f7f7f7;
 margin-left: 0px;
 z-index: 99;
-transition: all .2s;
 }
 
 /*----------------------------------------------------*/
@@ -281,7 +287,6 @@ width: 100%;
 border: none;
 text-align: left;
 outline: none;
-transition: 0.4s;
 border-radius: 2px;
 }
 
