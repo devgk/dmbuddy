@@ -140,7 +140,7 @@ height: auto;
 max-height: auto;
 overflow: scroll;
 background-color: #eee;
-padding: 0;
+padding: 4px; 0 0;
 box-shadow: 0 0 30px #ccc inset;
 margin-left: -220px;
 }
