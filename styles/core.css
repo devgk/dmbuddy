@@ -31,6 +31,7 @@ background-color: #f4f4f4;
 z-index: 99999;
 opacity: 1;
 transition: all .15s linear;
+-webkit-backface-visibility: hidden;
 }
 
 .loadingScreen .outcir{
@@ -81,6 +82,7 @@ background-color: #0086B5;
 top: 0;
 left: 0;
 z-index: 9999;
+-webkit-backface-visibility: hidden;
 }
 
 .logo,
@@ -122,6 +124,7 @@ padding: 1px 0 0;
 box-shadow: 0 0 30px #ccc inset;
 margin-left: -220px;
 transition: all .2s ease;
+-webkit-backface-visibility: hidden;
 }
 
 .headerLeft .menu{
