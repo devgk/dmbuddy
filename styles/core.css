@@ -230,6 +230,8 @@ padding: 0 5px;
 .contentBox{
 text-align: justify;
 padding: 15px 0 30PX;
+border-bottom: 2px dashed #ddd;
+margin: 0 auto 10px;
 }
 
 /*-----------------------------------------*/
@@ -242,16 +244,70 @@ min-height: 50px;
 overflow: visible;
 padding: 2px 0;
 letter-spacing: 0px;
+margin: 0 0 4px;;
 }
 
 .previousArticle, .nextArticle{
 width: 48%;
 min-height: 50px;
 display: inline-block;
-margin: 6px 0.7% 2px;
-background-color: #ccc;
-border-radius: 4px;
+margin: 0 0.7% 4px;
+border-radius: 5px;
 border: 0;
+}
+
+.previousArticle p, .nextArticle p{
+display: block;
+height: 40px;
+margin: 0;
+padding: 0;
+width: 170px;
+margin: 5px auto;
+background-color: FBD75B;
+border-radius: 8px;
+box-shadow: 0 0 6px #888;
+border: 2px solid #E36C46;
+}
+
+.previousArticle img, .nextArticle img {
+display: inline-block;
+height: 40px;
+width: 40px;
+margin: 0;
+}
+
+.previousArticle span, .nextArticle span{
+display: inline-block;
+position: absolute;
+width: 120px;
+line-height: 40px;
+font-weight: bold;
+font-size: 100%;
+}
+
+.previousArticle img {
+float: left;  
+-moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+filter: FlipH;
+-ms-filter: "FlipH";
+margin-right: 10px;
+}
+
+.previousArticle span{
+text-align: left;
+}
+
+.nextArticle img {
+float: right; 
+margin-left: 10px;
+}
+
+.nextArticle span{
+display: block;   
+text-align: right;
 }
 
 /*-----------------------------------------*/
@@ -281,6 +337,7 @@ width: 100%;
 min-height: 50px;
 padding: 0;
 background-color: #f4f4f4;
+border-top: 2px dashed #ddd;
 background: repeating-linear-gradient(
   135deg,
   #f4f4f4,
@@ -343,7 +400,7 @@ display: block;
 /*----------------Responsive-----------------*/
 @media only screen and (max-width: 412px){
 .previousArticle, .nextArticle{
-max-width: 150px;
+width: 180px;
 display: block;
 margin: 5px auto;
 }
