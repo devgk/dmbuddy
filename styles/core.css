@@ -259,7 +259,7 @@ padding: 0 5px;
 .contentBox{
 text-align: justify;
 padding: 15px 0 30PX;
-border-bottom: 2px dashed #ddd;
+
 margin: 0 auto 10px;
 }
 
@@ -280,9 +280,10 @@ width: 100%;
 height: auto;
 min-height: 50px;
 overflow: visible;
-padding: 2px 0;
+padding: 10px 0 4px;
 letter-spacing: 0px;
-margin: 0 0 4px;;
+border-top: 2px dashed #ddd;
+border-bottom: 2px dashed #ddd;
 }
 
 .previousArticle, .nextArticle{
@@ -375,7 +376,6 @@ width: 100%;
 min-height: 50px;
 padding: 0;
 background-color: #f4f4f4;
-border-top: 2px dashed #ddd;
 background: repeating-linear-gradient(
   135deg,
   #f4f4f4,

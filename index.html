@@ -2,39 +2,88 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="cache-control" content="no-cache" />
 <meta name="robots" content="noindex,nofollow">
 <link rel="stylesheet" href="styles/core.css">
 <script type="text/javascript" src="functions/core.js"></script>
 
-
 </head>
-
 <body>
     
-    <div class="loadingScreen" id="loadingScreen">
-        <div class="outcir"></div>
-        <div class="incir"></div>
-    </div>
+<div class="container">
+    
+<div class="fixedElement loadingScreen" id="loadingScreen">
+    <div class="outcir"></div>
+    <div class="incir"></div>
+</div>
 
-<div class="header">
+<div class="fixedElement header">
     <a class="navMenuLeft closed" id="closed" onClick="openMenu()">Open Menu</a>
     <a class="navMenuLeft opened" id="opened" onClick="closeMenu()">Close Menu</a>
-    <a class="logo">DM BUDDY</a>
 </div>
     
-<div class="headerLeft" id="headerLeft">
-    <a class="menu" onClick="closeMenu()">DM courses</a>
-    <a class="menu" onClick="closeMenu()">DM updates</a>
-    <a class="menu" onClick="closeMenu()">DM dictionary</a>
-</div>
-
-<div class="bodyBase" id="bodyBase" onClick="closeMenu()">
-
+<div class="fixedElement headerLeft transtionElement" id="headerLeft">
+    <div class="headerLeftContainer">
+    <div class="spaceElement"></div>
+        
+    <p class="menu" onClick="closeMenu()">
+        <a>DM courses</a>
+    </p>
+        
+    <p class="menu" onClick="closeMenu()">
+        <a>Just Practicle</a>
+    </p>
+        
+    <p class="menu" onClick="closeMenu()">
+        <a>DM updates</a>
+    </p>
+        
+    <p class="menu" onClick="closeMenu()">
+        <a>DM reference</a>
+    </p>
+        
+    <p class="menu" onClick="closeMenu()">
+        <a>DM HOT</a>
+    </p>
+        
+    <p class="menu" onClick="closeMenu()">
+        <a>ASK Buddies</a>
+    </p>
     
-    <div class="contentBox">
-        <h1>Title 1</h1>
-        <p>Elements being rendered to the screen is one way for us to decide that the page has been rendered. If you would like to use that source of information (not required at all), specify one or more selectors. You can comma seperate the selectors to propertly handle error states, where the progress bar should disappear, but the element we are looking for may never appear</p>
+    <div class="spaceElement"></div>
+    <div class="spaceElement"></div>
+    <div class="spaceElement"></div>
+    <div class="spaceElement"></div>
+    <div class="spaceElement"></div>
+    <div class="spaceElement"></div>
+    <div class="spaceElement"></div>
     </div>
+</div>
+    
+<div class="bodyBase transtionElement" id="bodyBase" onClick="closeMenu()">
+    
+<!--course title-->
+<!--END course title--> 
+<!--course content---->
+
+    <div class="gridMain">     
+    <div class="contentBox">
+        <div class="content">
+        
+        </div>
+    </div>
+    </div>
+        
+<!--END course content-->
+<!--course navigation--->
+<!--END course navigation-->
+<!-------google ads-------->
+<!-----END google ads------>
+<!------chapter list------->
+<!----END chapter list----->
+</div>
+    
 </div>
 </body>
 </html>
