@@ -1,12 +1,119 @@
 <!DOCTYPE HTML SYSTEM>
 <html>
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 <meta http-equiv="cache-control" content="no-cache" />
 <meta name="robots" content="noindex,nofollow">
 <link rel="stylesheet" href="styles/core.css">
 <script type="text/javascript" src="functions/core.js"></script>
+    
+<style>
+@font-face {
+    font-family: 'PT Sans';
+    src: url(styles/PT_Sans-Web-Regular.ttf);
+}
+@font-face {
+   font-family: 'PT Sans';
+   src: url(styles/PT_Sans-Web-Blod.ttf);
+   font-weight: bold;
+}
+.fixedElement{
+position: fixed;
+-webkit-transform: translate3d(0, 0, 0);
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+}
+.transtionElement{
+transition: all .3s;
+-webkit-transition: all .3s;
+-webkit-transform: translate3d(0, 0, 0);
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+}    
+.loadingScreen{
+display: block;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #f4f4f4;
+z-index: 9999999;
+opacity: 1;
+-webkit-transition: opacity .15s linear;
+transition: opacity .15s linear;
+}
+.loadingScreen p{
+position: absolute;
+top: 50%;
+left:  50%;
+margin-top: -70px;
+margin-left: -70px;
+background: #f9f9f9;
+padding: 92px 10px 5px;
+line-height: 40px;
+color: #888;
+display: block;
+width: 120px;
+text-align: center;
+font-weight: bold;
+font-size: 140%;
+border-radius: 10px;
+border: 2px solid #ddd;
+box-shadow: 0 0 80px #bbb;
+}
+.loadingScreen .outcir{
+width: 60px;
+height: 60px;
+margin: 0;
+border: 6px solid #FBD75B;
+border-radius: 50%;
+font-weight: bold;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -51px;
+margin-left: -34px;
+box-shadow: 0 0 6px #555;
+z-index: 99;
+}
+.loadingScreen .incir{
+width: 60px;
+height: 60px;
+margin: 0;
+border: 6px dashed #0079A3;
+border-radius: 50%;
+font-weight: bold;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -51px;
+margin-left: -34px;
+box-shadow: 0 0 6px #555 inset;
+z-index: 999;
+-webkit-animation: cirRot 0.8s linear infinite;
+animation: cirRot 0.8s linear infinite;
+}
+@-webkit-keyframes cirRot{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes cirRot{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+</style>
 
 </head>
 <body>
@@ -16,19 +123,25 @@
 <div class="fixedElement loadingScreen" id="loadingScreen">
     <div class="outcir"></div>
     <div class="incir"></div>
+    <p>DM BUDDY</p>
 </div>
 
 <div class="fixedElement header">
     <a class="navMenuLeft closed" id="closed" onClick="openMenu()">Open Menu</a>
     <a class="navMenuLeft opened" id="opened" onClick="closeMenu()">Close Menu</a>
+    <a href="/home.html" class="logo">DM BUDDY</a>
 </div>
     
 <div class="fixedElement headerLeft transtionElement" id="headerLeft">
     <div class="headerLeftContainer">
-    <div class="spaceElement"></div>
         
     <p class="menu" onClick="closeMenu()">
         <a>DM courses</a>
+    </p>
+    <p class="subMenu">
+    <a class="subMenuList">Web Basics</a>
+    <a class="subMenuList">Digital Marketing</a>
+    <a class="subMenuList">WordPress</a>
     </p>
         
     <p class="menu" onClick="closeMenu()">
