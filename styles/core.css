@@ -244,6 +244,15 @@ border-bottom: 2px dashed #ddd;
 margin: 0 auto 10px;
 }
 
+.content img{
+display: block;
+width: 95%;
+margin: 0 auto 20px;
+height: auto;
+box-shadow: 0 0 4px #ddd;
+border-radius: 4px;
+}
+
 /*-----------------------------------------*/
 
 .chapterNavigation{
