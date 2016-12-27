@@ -61,6 +61,7 @@ height: 100%;
 background-color: #f4f4f4;
 z-index: 9999999;
 opacity: 1;
+-webkit-transition: all .15s linear;
 transition: all .15s linear;
 }
 
@@ -94,7 +95,13 @@ margin-top: -33px;
 margin-left: -33px;
 box-shadow: 0 0 6px #555 inset;
 z-index: 999;
+-webkit-animation: cirRot 1s linear infinite;
 animation: cirRot 1s linear infinite;
+}
+
+@-webkit-keyframes cirRot{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 
 @keyframes cirRot{
