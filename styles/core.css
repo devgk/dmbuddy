@@ -214,6 +214,10 @@ letter-spacing: 0px;
 border-top: 2px dashed #ddd;
 border-bottom: 2px dashed #ddd;
 }
+.chapterNavigation a{
+text-decoration: none;
+color: #444;
+}
 .previousArticle, .nextArticle{
 width: 48%;
 min-height: 50px;
