@@ -134,33 +134,37 @@ animation: cirRot 0.8s linear infinite;
     
 <div class="fixedElement headerLeft transtionElement" id="headerLeft">
     <div class="headerLeftContainer">
+    
+    <div class="logoImg">
+        <img src="images/160.png">
+    </div>
         
-    <p class="menu" onClick="closeMenu()">
-        <a>DM courses</a>
+    <p class="menu" id="subMenuCont" onClick="return toggleSubMenu(1);">
+        <a>DM courses <i id="plus" class="plus transtionElement">+</i></a>
     </p>
-    <p class="subMenu">
+    <p class="subMenu" id="subMenu">
     <a class="subMenuList">Web Basics</a>
     <a class="subMenuList">Digital Marketing</a>
     <a class="subMenuList">WordPress</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>Just Practicle</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>DM updates</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>DM reference</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>DM HOT</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>ASK Buddies</a>
     </p>
     

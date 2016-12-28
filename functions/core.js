@@ -13,17 +13,34 @@ elem.parentNode.removeChild(elem);
 
 function openMenu(){
 document.getElementById('bodyBase').style.marginLeft = '220px';
-document.getElementById('bodyBase').style.marginRigth = '-220px';
-document.getElementById('headerLeft').style.marginLeft = '0px';
 document.getElementById('closed').style.display = 'none';
 document.getElementById('opened').style.display = 'block';
 }
 
 function closeMenu(){
-    document.getElementById('bodyBase').style.marginLeft = '0px';
-    document.getElementById('headerLeft').style.marginLeft = '-220px';
-    document.getElementById('opened').style.display = 'none';
-    document.getElementById('closed').style.display = 'block';
+document.getElementById('bodyBase').style.marginLeft = '0px';
+document.getElementById('opened').style.display = 'none';
+document.getElementById('closed').style.display = 'block';
+}
+
+function toggleSubMenu(num){
+x = num;
+if (x == 1){
+document.getElementById('subMenu').style.display = 'block';
+document.getElementById('plus').style.transform = 'rotate(45deg)';
+document.getElementById('plus').style.backgroundColor = '#E36C46';
+document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(0) };
+}
+if (x == 0){
+document.getElementById('subMenu').style.display = 'none';
+document.getElementById('plus').style.transform = 'rotate(0)';
+document.getElementById('plus').style.backgroundColor = '#FBD75B';
+document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(1) };
+}
+}
+
+function expandSubMenu(){
+
 }
 
 function accordanceCode(){
