@@ -2,8 +2,20 @@ window.onload = function(){startScript();};
 
 function startScript(){
 document.getElementById('loadingScreen').style.opacity = '0';
-setTimeout(removeLoading, 150);
+setTimeout(hammer,10);
 setTimeout(accordanceCode, 50);
+setTimeout(removeLoading, 150);
+}
+
+function hammer(){
+var bodyBase = document.getElementById('bodyBase');
+var mc = new Hammer(bodyBase);
+mc.on("swiperight", function() {
+setTimeout(openMenu, 10);
+});
+mc.on("swipeleft", function() {
+setTimeout(closeMenu, 10);
+});
 }
 
 function removeLoading(){

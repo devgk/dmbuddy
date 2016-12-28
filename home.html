@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <link rel="stylesheet" href="styles/core.css">
 <script type="text/javascript" src="functions/core.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
     
 <style>
 @font-face {
@@ -134,29 +135,37 @@ animation: cirRot 0.8s linear infinite;
     
 <div class="fixedElement headerLeft transtionElement" id="headerLeft">
     <div class="headerLeftContainer">
-    <div class="spaceElement"></div>
+    
+    <div class="logoImg">
+        <img src="images/160.png">
+    </div>
         
-    <p class="menu" onClick="closeMenu()">
-        <a>DM courses</a>
+    <p class="menu" id="subMenuCont" onClick="return toggleSubMenu(1);">
+        <a>DM courses <i id="plus" class="plus transtionElement">+</i></a>
+    </p>
+    <p class="subMenu" id="subMenu">
+    <a class="subMenuList">Web Basics</a>
+    <a class="subMenuList">Digital Marketing</a>
+    <a class="subMenuList">WordPress</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>Just Practicle</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>DM updates</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>DM reference</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>DM HOT</a>
     </p>
         
-    <p class="menu" onClick="closeMenu()">
+    <p class="menu">
         <a>ASK Buddies</a>
     </p>
     
@@ -172,24 +181,89 @@ animation: cirRot 0.8s linear infinite;
     
 <div class="bodyBase transtionElement" id="bodyBase" onClick="closeMenu()">
     
-<!--course title-->    
+<!--course title-->
+    
+    <div class="chapterTitle">
+    <div class="gridMain">
+        <p class="chapterTitlex"><span class="chapterx">Chapter 1.1</span> Introduction to Digital Marketing<a href="/index.html"><img src="images/closetopic.png"></a></p>
+    </div>
+    </div>
+    
 <!--END course title--> 
 <!--course content---->
 
     <div class="gridMain">     
     <div class="contentBox">
         <div class="content">
-
+            
+        <h1>Title 3</h1>
+        <img src="course-images/dummy/dummy.jpg">
+        <p>Elements being rendered to the screen is one way for us to decide that the page has been rendered. If you would like to use that source of information (not required at all), specify one or more selectors. You can comma seperate the selectors to propertly handle error states, where the progress bar should disappear, but the element we are looking for may never appear</p>
+        
         </div>
     </div>
     </div>
         
 <!--END course content-->
 <!--course navigation--->
+    
+    <div class="chapterNavigation">
+    <div class="gridMain">
+        <div class="previousArticle">
+            <a href="#"><p>
+                <img src="images/next.png">
+                <span>Previous Topic</span>
+            </p></a>
+        </div>
+        <div class="nextArticle">
+            <a href="#"><p>
+                <span>Next Topic</span>
+                <img src="images/next.png">
+            </p></a>
+        </div>
+    </div>
+    </div>
+    
 <!--END course navigation-->
 <!-------google ads-------->
+    <div class="adBackground">
+    
+    </div>
 <!-----END google ads------>
 <!------chapter list------->
+    <div class="chapterList">
+        <p>Digital Marketing Course</p>
+    </div>
+    
+    <div class="accordionBase">
+    <div class="gridMain">
+    
+        <button class="accordion chapterTitlex transtionElement"><span class="chapterx">Chapter 1</span> Fundamentals of Digital Marketing</button>
+    <div class="panel">
+        <ol class="topics">
+        <li>Introduction to Digital Marketing</li>
+        <li>Introduction to Digital Marketing</li>
+        </ol>
+    </div>
+
+    <button class="accordion chapterTitlex transtionElement"><span class="chapterx">Chapter 2</span> Search Engine Optimization</button>
+    <div class="panel">
+        <ol class="topics">
+        <li>Introduction to Digital Marketing</li>
+        <li>Introduction to Digital Marketing</li>
+        </ol>
+    </div>
+
+    <button class="accordion chapterTitlex transtionElement"><span class="chapterx">Chapter 3</span> Social Media Marketing</button>
+    <div class="panel">
+        <ol class="topics">
+        <li>Introduction to Digital Marketing</li>
+        <li>Introduction to Digital Marketing</li>
+        </ol>
+     </div>
+    
+    </div>
+    </div>
 <!----END chapter list----->
 </div>
     
