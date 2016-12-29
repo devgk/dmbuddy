@@ -4,106 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 <meta http-equiv="cache-control" content="no-cache" />
 <meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="styles/initial.css">
 <link rel="stylesheet" href="styles/core.css">
 <script type="text/javascript" src="functions/core.js"></script>
 <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    
-<style>
-.fixedElement{
-position: fixed;
--webkit-transform: translate3d(0, 0, 0);
--webkit-backface-visibility: hidden;
--webkit-perspective: 1000;
-}
-.transtionElement{
-transition: all .3s;
--webkit-transition: all .3s;
--webkit-transform: translate3d(0, 0, 0);
--webkit-backface-visibility: hidden;
--webkit-perspective: 1000;
-}    
-.loadingScreen{
-display: block;
-top:0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: #f4f4f4;
-z-index: 9999999;
-opacity: 1;
--webkit-transition: opacity .15s linear;
-transition: opacity .15s linear;
-}
-.loadingScreen .loadingBase{
-position: absolute;
-width: 100px;
-height: 100px;
-top: 50%;
-left:  50%;
-margin-top: -50px;
-margin-left: -50px;
-background: #f9f9f9;
-color: #888;
-display: block;
-border-radius: 50%;
-border: 2px solid #ddd;
-box-shadow: 0 0 80px #bbb;
-}
-.loadingScreen .outcir{
-width: 60px;
-height: 60px;
-margin: 0;
-border: 6px solid #FBD75B;
-border-radius: 50%;
-font-weight: bold;
-position: absolute;
-top: 50%;
-left: 50%;
-margin-top: -36px;
-margin-left: -36px;
-box-shadow: 0 0 6px #555;
-z-index: 99;
-}
-.loadingScreen .incir{
-width: 60px;
-height: 60px;
-margin: 0;
-border: 6px dashed #0079A3;
-border-radius: 50%;
-font-weight: bold;
-position: absolute;
-top: 50%;
-left: 50%;
-margin-top: -36px;
-margin-left: -36px;
-box-shadow: 0 0 6px #555 inset;
-z-index: 999;
--webkit-animation: cirRot 0.8s linear infinite;
-animation: cirRot 0.8s linear infinite;
-}
-@-webkit-keyframes cirRot{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@keyframes cirRot{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-</style>
-
 </head>
 <body>
     
@@ -144,15 +49,14 @@ animation: cirRot 0.8s linear infinite;
     <a href="/home.html" class="logo">DM BUDDY</a>
 </div>
     
-<div class="fixedElement headerLeft transtionElement" id="headerLeft">
-    <div class="headerLeftContainer">
+<div class="fixedElement headerLeft" id="headerLeft">
     
     <div class="logoImg">
         <img src="images/160.png">
     </div>
         
     <p class="menu" id="subMenuCont" onClick="return toggleSubMenu(1);">
-        <a>DM courses <i id="plus" class="plus transtionElement">+</i></a>
+        <a href="#">DM courses <img id="plus" class="transtionElement" src="images/plus.png"></a>
     </p>
     <p class="subMenu" id="subMenu">
     <a class="subMenuList">Web Basics</a>
@@ -161,65 +65,46 @@ animation: cirRot 0.8s linear infinite;
     </p>
         
     <p class="menu">
-        <a>Just Practicle</a>
+        <a href="#">Just Practicle</a>
     </p>
         
     <p class="menu">
-        <a>DM updates</a>
+        <a href="#">DM updates</a>
     </p>
         
     <p class="menu">
-        <a>DM reference</a>
+        <a href="#">DM reference</a>
     </p>
         
     <p class="menu">
-        <a>DM HOT</a>
+        <a href="#">DM HOT</a>
     </p>
         
     <p class="menu">
-        <a>ASK Buddies</a>
+        <a href="#">ASK Buddies</a>
     </p>
-    
-    <div class="spaceElement"></div>
-    <div class="spaceElement"></div>
-    <div class="spaceElement"></div>
-    <div class="spaceElement"></div>
-    <div class="spaceElement"></div>
-    <div class="spaceElement"></div>
-    <div class="spaceElement"></div>
-    </div>
 </div>
     
 <div class="bodyBase transtionElement" id="bodyBase" onClick="closeMenu()">
     
-<!--course title-->
+<!--course content---->
+    <div id="innerContent">
     
     <div class="chapterTitle">
-    <div class="gridMain">
-        <p class="chapterTitlex"><span class="chapterx">Chapter 1.1</span> Introduction to Digital Marketing<a href="/index.html"><img src="images/closetopic.png"></a></p>
+    <div class="grid">
+        <p><span class="chapterx">Chapter 1.1</span> Introduction to Digital Marketing<a href="/home.html"><img src="images/closetopic.png"></a></p>
     </div>
     </div>
-    
-<!--END course title--> 
-<!--course content---->
-
-    <div class="gridMain">     
-    <div class="contentBox">
-        <div class="content">
+     
+    <div class="contentBox grid">
             
         <h1>Title 3</h1>
         <img src="course-images/dummy/dummy.jpg">
         <p>Elements being rendered to the screen is one way for us to decide that the page has been rendered. If you would like to use that source of information (not required at all), specify one or more selectors. You can comma seperate the selectors to propertly handle error states, where the progress bar should disappear, but the element we are looking for may never appear</p>
         
-        </div>
     </div>
-    </div>
-        
-<!--END course content-->
-<!--course navigation--->
     
     <div class="chapterNavigation">
-    <div class="gridMain">
         <div class="previousArticle">
             <a href="#"><p>
                 <img src="images/next.png">
@@ -233,9 +118,9 @@ animation: cirRot 0.8s linear infinite;
             </p></a>
         </div>
     </div>
-    </div>
-    
-<!--END course navigation-->
+
+    </div>    
+<!------END COntent-------->
 <!-------google ads-------->
     <div class="adBackground">
     
@@ -246,38 +131,43 @@ animation: cirRot 0.8s linear infinite;
         <p>Digital Marketing Course</p>
     </div>
     
-    <div class="accordionBase">
-    <div class="gridMain">
+    <div class="grid accordionBase">
     
-        <button class="accordion chapterTitlex transtionElement"><span class="chapterx">Chapter 1</span> Fundamentals of Digital Marketing</button>
+    <p class="accordion chapterTitlex transtionElement"><span class="chapterx">
+        Chapter 1</span> Fundamentals of Digital Marketing
+    </p>
     <div class="panel">
         <ol class="topics">
         <li>Introduction to Digital Marketing</li>
         <li>Introduction to Digital Marketing</li>
         </ol>
     </div>
-
-    <button class="accordion chapterTitlex transtionElement"><span class="chapterx">Chapter 2</span> Search Engine Optimization</button>
+        
+    <p class="accordion chapterTitlex transtionElement"><span class="chapterx">
+        Chapter 2</span> Search Engine Optimization
+    </p>
     <div class="panel">
         <ol class="topics">
         <li>Introduction to Digital Marketing</li>
         <li>Introduction to Digital Marketing</li>
         </ol>
     </div>
-
-    <button class="accordion chapterTitlex transtionElement"><span class="chapterx">Chapter 3</span> Social Media Marketing</button>
+        
+    <p class="accordion chapterTitlex transtionElement"><span class="chapterx">
+        Chapter 3</span> Social Media Marketing
+    </p>
     <div class="panel">
         <ol class="topics">
         <li>Introduction to Digital Marketing</li>
         <li>Introduction to Digital Marketing</li>
         </ol>
      </div>
-    
+
     </div>
-    </div>
-<!----END chapter list----->
-</div>
-    
-</div>
+<!------END chapter list------->
+
+
+</div><!----Body Base----->
+</div><!----Container----->
 </body>
 </html>
