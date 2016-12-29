@@ -7,32 +7,40 @@ setTimeout(accordanceCode, 50);
 setTimeout(removeLoading, 150);
 }
 
-function hammer(){
-var bodyBase = document.getElementById('bodyBase');
-var mc = new Hammer(bodyBase);
-mc.on("swiperight", function() {
-setTimeout(openMenu, 10);
-});
-mc.on("swipeleft", function() {
-setTimeout(closeMenu, 10);
-});
-}
-
 function removeLoading(){
 var elem = document.getElementById("loadingScreen");
 elem.parentNode.removeChild(elem);
 }
 
-function openMenu(){
-document.getElementById('bodyBase').style.marginLeft = '220px';
-document.getElementById('closed').style.display = 'none';
-document.getElementById('opened').style.display = 'block';
+function hammer(){
+var bodyBase = document.getElementById('bodyBase');
+var mc = new Hammer(bodyBase);
+mc.on("swiperight", function() {
+
+    setTimeout(toggleMenu, 10, 1);
+
+});
+mc.on("swipeleft", function() {
+
+    setTimeout(toggleMenu, 10, 0);
+
+});
 }
 
-function closeMenu(){
+function toggleMenu(num){
+y = num;
+if (y == 1){
+document.getElementById('bodyBase').style.marginLeft = '220px';
+document.getElementById("hamburger").className = "";
+document.getElementById("hamburger").className = "navMenuLeft hamburglar is-open";
+document.getElementById('hamburger').onclick = function () { toggleMenu(0) };
+}
+if (y == 0){
 document.getElementById('bodyBase').style.marginLeft = '0px';
-document.getElementById('opened').style.display = 'none';
-document.getElementById('closed').style.display = 'block';
+document.getElementById("hamburger").className = "";
+document.getElementById("hamburger").className = "navMenuLeft hamburglar is-closed";
+document.getElementById('hamburger').onclick = function () { toggleMenu(1) };
+}
 }
 
 function toggleSubMenu(num){
