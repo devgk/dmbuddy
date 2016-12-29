@@ -1,5 +1,4 @@
 window.onload = function(){startScript();};
-
 function startScript(){
 document.getElementById('loadingScreen').style.opacity = '0';
 setTimeout(hammer,10);
@@ -16,14 +15,10 @@ function hammer(){
 var bodyBase = document.getElementById('bodyBase');
 var mc = new Hammer(bodyBase);
 mc.on("swiperight", function() {
-
-    setTimeout(toggleMenu, 10, 1);
-
+setTimeout(toggleMenu, 10, 1);
 });
 mc.on("swipeleft", function() {
-
-    setTimeout(toggleMenu, 10, 0);
-
+setTimeout(toggleMenu, 10, 0);
 });
 }
 
@@ -57,10 +52,6 @@ document.getElementById('plus').style.webkitTransform = 'rotate(0)';
 document.getElementById('plus').style.backgroundColor = '#FBD75B';
 document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(1) };
 }
-}
-
-function expandSubMenu(){
-
 }
 
 function accordanceCode(){
