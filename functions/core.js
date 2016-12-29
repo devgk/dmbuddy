@@ -39,13 +39,13 @@ function toggleSubMenu(num){
 x = num;
 if (x == 1){
 document.getElementById('subMenu').style.display = 'block';
-document.getElementById('plus').style.transform = 'rotate(45deg)';
+document.getElementById('plus').style.webkitTransform = 'rotate(45deg)';
 document.getElementById('plus').style.backgroundColor = '#E36C46';
 document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(0) };
 }
 if (x == 0){
 document.getElementById('subMenu').style.display = 'none';
-document.getElementById('plus').style.transform = 'rotate(0)';
+document.getElementById('plus').style.webkitTransform = 'rotate(0)';
 document.getElementById('plus').style.backgroundColor = '#FBD75B';
 document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(1) };
 }
