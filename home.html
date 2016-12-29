@@ -4,23 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 <meta http-equiv="cache-control" content="no-cache" />
 <meta name="robots" content="noindex,nofollow">
-<link rel="stylesheet" href="styles/initial.css">
 <link rel="stylesheet" href="styles/core.css">
 <script type="text/javascript" src="functions/core.js"></script>
 <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-    
 <div class="container">
-    
 <div class="fixedElement loadingScreen" id="loadingScreen">
     <div class="loadingBase">
     <div class="outcir"></div>
     <div class="incir"></div>
     </div>
 </div>
-
 <div class="fixedElement header">
     <div id="hamburger" class="navMenuLeft hamburglar is-close" onClick="return toggleMenu(1);">
     <div class="burger-icon">
@@ -48,7 +44,6 @@
     </div>
     <a href="/home.html" class="logo">DM BUDDY</a>
 </div>
-    
 <div class="fixedElement headerLeft" id="headerLeft">
     
     <div class="logoImg">
@@ -84,10 +79,9 @@
         <a href="#">ASK Buddies</a>
     </p>
 </div>
+<div class="bodyBase transtionElement" id="bodyBase" onClick="closeMenu()"> 
+<!-----Inner content------->
     
-<div class="bodyBase transtionElement" id="bodyBase" onClick="closeMenu()">
-    
-<!--course content---->
     <div id="innerContent">
     
     <div class="chapterTitle">
@@ -104,26 +98,27 @@
         
     </div>
     
+    
     <div class="chapterNavigation">
-        <div class="previousArticle">
+        <div id="previousArticle" class="previousArticle">
             <a href="#"><p>
                 <img src="images/next.png">
                 <span>Previous Topic</span>
             </p></a>
         </div>
-        <div class="nextArticle">
-            <a href="#"><p>
+        <div id="nextArticle" class="nextArticle">
+            <a href="#" onClick=""><p>
                 <span>Next Topic</span>
                 <img src="images/next.png">
             </p></a>
         </div>
     </div>
 
-    </div>    
+    </div>
+
 <!------END COntent-------->
 <!-------google ads-------->
     <div class="adBackground">
-    
     </div>
 <!-----END google ads------>
 <!------chapter list------->
@@ -132,7 +127,6 @@
     </div>
     
     <div class="grid accordionBase">
-    
     <p class="accordion chapterTitlex transtionElement"><span class="chapterx">
         Chapter 1</span> Fundamentals of Digital Marketing
     </p>
@@ -142,7 +136,6 @@
         <li>Introduction to Digital Marketing</li>
         </ol>
     </div>
-        
     <p class="accordion chapterTitlex transtionElement"><span class="chapterx">
         Chapter 2</span> Search Engine Optimization
     </p>
@@ -152,7 +145,6 @@
         <li>Introduction to Digital Marketing</li>
         </ol>
     </div>
-        
     <p class="accordion chapterTitlex transtionElement"><span class="chapterx">
         Chapter 3</span> Social Media Marketing
     </p>
@@ -161,12 +153,9 @@
         <li>Introduction to Digital Marketing</li>
         <li>Introduction to Digital Marketing</li>
         </ol>
-     </div>
-
+    </div>
     </div>
 <!------END chapter list------->
-
-
 </div><!----Body Base----->
 </div><!----Container----->
 </body>

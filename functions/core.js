@@ -2,6 +2,8 @@ window.onload = function(){startScript();};
 
 function startScript(){
 document.getElementById('loadingScreen').style.opacity = '0';
+document.getElementById('previousArticle').style.display = 'none';
+document.getElementById('nextArticle').style.width = '98%';
 setTimeout(hammer,10);
 setTimeout(accordanceCode, 50);
 setTimeout(removeLoading, 150);
@@ -24,17 +26,11 @@ function toggleMenu(num){
 y = num;
 if (y == 1){
 document.getElementById('bodyBase').style.marginLeft = '220px';
-document.getElementById("hamburger").style.display = "none";
-document.getElementById("hamburger").className = "";
-document.getElementById("hamburger").style.display = "block";
 document.getElementById("hamburger").className = "navMenuLeft hamburglar is-open";
 document.getElementById('hamburger').onclick = function () { toggleMenu(0) };
 }
 if (y == 0){
 document.getElementById('bodyBase').style.marginLeft = '0px';
-document.getElementById("hamburger").style.display = "none";
-document.getElementById("hamburger").className = "";
-document.getElementById("hamburger").style.display = "block";
 document.getElementById("hamburger").className = "navMenuLeft hamburglar is-closed";
 document.getElementById('hamburger').onclick = function () { toggleMenu(1) };
 }
