@@ -68,13 +68,13 @@ document.getElementById('choi3').style.display="block";
 function continueReading(){
 var status = readCookie("userStatus");
 if(status == '1'){
-window.location = "../dmbuddy/a1.html";
+window.location = "../a1.html";
 }
 else if(status == '2'){
-window.location = "/wordpress/dmbuddy/business.html";
+window.location = "../a2.html";
 }
 else if(status == '3'){
-window.location = "/wordpress/dmbuddy/business.html";
+window.location = "../a3.html";
 }
 }
 function readCookie(cookieName){
@@ -87,34 +87,19 @@ else{return null;}
 function business(){document.cookie = "userStatus=1;";
 window.location = "../a1.html";}
 function blog(){document.cookie = "userStatus=2;";
-window.location = "http://127.0.0.1/wordpress/dmbuddy/business.html";}
+window.location = "../a2.html";}
 function pro(){document.cookie = "userStatus=3;";
-window.location = "http://127.0.0.1/wordpress/dmbuddy/business.html";}
+window.location = "../a3.html";}
 </script>
 
 <style type="text/css">
 body{
 margin: 0;
 font-family: 'PT Sans';
-background: linear-gradient(145deg, #d5b140, #f28f2f, #771f85, #314561);
-background-size: 600% 600%;
--webkit-animation: AnimationName 60s ease-in-out infinite;
-animation: AnimationName 60s ease-in-out infinite;
+background: #092756;
+background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg, #670d10 0%,#092756 100%);
 }
-@-webkit-keyframes AnimationName {
-    0%{background-position: 0% 0%}
-    30%{background-position: 50% 100%}
-    50%{background-position:100% 100%}
-    70%{background-position: 50% 100%}
-    100%{background-position: 0% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position: 0% 0%}
-    30%{background-position: 50% 100%}
-    50%{background-position:100% 100%}
-    70%{background-position: 50% 100%}
-    100%{background-position: 0% 0%}
-    }
 .base{
 width: 240px;
 position: fixed;
