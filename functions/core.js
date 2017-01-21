@@ -1,17 +1,31 @@
-window.onload = function(){startScript();};
+//The moment you try to simply the technologies, its becomes more complicated!
 
+//If you spend too much time thinking about a thing, you’ll never get it done.
+
+window.onload = function(){startScript();};
 function startScript(){
+try {
+hammer();
+}catch(err) {}
+try {
+chapter1(01);
+}catch(err) {}
+setTimeout(removeLoading, 100);
+}
+
+function startLoading(){
+document.getElementById("loadingScreen").style.display = "block";
+}
+function removeLoading(){setTimeout(noLoad, 100);}
+function noLoad(){
 document.getElementById('loadingScreen').style.opacity = '0';
-document.getElementById('previousArticle').style.display = 'none';
-document.getElementById('nextArticle').style.width = '98%';
-setTimeout(hammer,10);
-setTimeout(accordanceCode, 50);
-setTimeout(removeLoading, 150);
+setTimeout(endLoading, 150); 
 }
-function removeLoading(){
-var elem = document.getElementById("loadingScreen");
-elem.parentNode.removeChild(elem);
+function endLoading(){
+document.getElementById("loadingScreen").style.display = "none";
+document.getElementById('loadingScreen').style.opacity = '1';
 }
+
 function hammer(){
 var bodyBase = document.getElementById('bodyBase');
 var mc = new Hammer(bodyBase);
@@ -22,10 +36,11 @@ mc.on("swipeleft", function() {
 setTimeout(toggleMenu, 10, 0);
 });
 }
+
 function toggleMenu(num){
 y = num;
 if (y == 1){
-document.getElementById('bodyBase').style.marginLeft = '220px';
+document.getElementById('bodyBase').style.marginLeft = '270px';
 document.getElementById("hamburger").className = "navMenuLeft hamburglar is-open";
 document.getElementById('hamburger').onclick = function () { toggleMenu(0) };
 }
@@ -48,16 +63,5 @@ document.getElementById('subMenu').style.display = 'none';
 document.getElementById('plus').style.webkitTransform = 'rotate(0)';
 document.getElementById('plus').style.backgroundColor = '#FBD75B';
 document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(1) };
-}
-}
-function accordanceCode(){
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-     this.classList.toggle("active");
-     this.nextElementSibling.classList.toggle("show");
-  }
 }
 }

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="cache-control" content="no-cache" />
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+<script type="text/javascript">
+window.onload=function(){autoChk();};
+function autoChk(){
+var status = readCookie("userStatus");
+if(status == '1'){
+setTimeout(continueFlow, 10);
+}
+else if(status == '2'){
+setTimeout(continueFlow, 10);
+}
+else if(status == '3'){
+setTimeout(continueFlow, 10);
+}
+else if(status == '4'){
+setTimeout(resetFlow, 10);
+}
+else{setTimeout(userSetup, 10);}
+}
+function continueFlow(){
+document.getElementById('selObj').style.display="none";
+document.getElementById('two').style.display="none";
+document.getElementById('conti').style.display="block";
+document.getElementById('choi1').style.display="none";
+document.getElementById('choi2').style.display="none";
+document.getElementById('choi3').style.display="none";
+document.getElementById('base').style.opacity="1";
+}
+function resetFlow(){
+document.getElementById('one').innerHTML = "Select Your Objective!";
+document.getElementById('selObj').style.display="none";
+document.getElementById('four').style.display="none";
+document.getElementById('two').style.display="block";
+document.getElementById('conti').style.display="none";
+document.getElementById('choi1').style.display="block";
+document.getElementById('choi2').style.display="block";
+document.getElementById('choi3').style.display="block";
+document.getElementById('base').style.opacity="1";
+}
+function userSetup(){
+document.getElementById('one').innerHTML = "Welcome to <b>DM BUDDY</b>";
+document.getElementById('four').innerHTML = "Thanks for chosing <b>DM BUDDY</b>! Please select your objective, so that we can serve you the perfect digital marketing study materials.";
+document.getElementById('selObj').style.display="block";
+document.getElementById('two').style.display="none";
+document.getElementById('conti').style.display="none";
+document.getElementById('choi1').style.display="none";
+document.getElementById('choi2').style.display="none";
+document.getElementById('choi3').style.display="none";
+document.getElementById('base').style.opacity="1";
+}
+function selectObj(){
+document.getElementById('one').innerHTML = "Select Your Objective!";
+document.getElementById('selObj').style.display="none";
+document.getElementById('four').style.display="none";
+document.getElementById('two').style.display="block";
+document.getElementById('conti').style.display="none";
+document.getElementById('choi1').style.display="block";
+document.getElementById('choi2').style.display="block";
+document.getElementById('choi3').style.display="block";
+}
+function continueReading(){
+var status = readCookie("userStatus");
+if(status == '1'){
+window.location = "../dmbuddy/a1.html";
+}
+else if(status == '2'){
+window.location = "/wordpress/dmbuddy/business.html";
+}
+else if(status == '3'){
+window.location = "/wordpress/dmbuddy/business.html";
+}
+}
+function readCookie(cookieName){
+var results = document.cookie.match(cookieName + '=(.*?)(;|$)');
+if(results){return(results[1]);}
+else{return null;}
+}
+
+    
+function business(){document.cookie = "userStatus=1;";
+window.location = "../a1.html";}
+function blog(){document.cookie = "userStatus=2;";
+window.location = "http://127.0.0.1/wordpress/dmbuddy/business.html";}
+function pro(){document.cookie = "userStatus=3;";
+window.location = "http://127.0.0.1/wordpress/dmbuddy/business.html";}
+</script>
+
+<style type="text/css">
+body{
+margin: 0;
+font-family: 'PT Sans';
+background: linear-gradient(145deg, #d5b140, #f28f2f, #771f85, #314561);
+background-size: 600% 600%;
+-webkit-animation: AnimationName 60s ease-in-out infinite;
+animation: AnimationName 60s ease-in-out infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position: 0% 0%}
+    30%{background-position: 50% 100%}
+    50%{background-position:100% 100%}
+    70%{background-position: 50% 100%}
+    100%{background-position: 0% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position: 0% 0%}
+    30%{background-position: 50% 100%}
+    50%{background-position:100% 100%}
+    70%{background-position: 50% 100%}
+    100%{background-position: 0% 0%}
+    }
+.base{
+width: 240px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -150px;
+margin-left: -122px;
+border-radius: 10px;
+text-align: center;
+text-shadow: 0 0 4px rgba(0,0,0,0.1);
+color:  #fff;
+}
+.overBase{
+width: 100%;
+border: 1px dashed rgba(255,255,255,0.4);
+border-radius: 10px;
+text-align: center;
+overflow: hidden;
+}
+.one {
+font-size: 22px;
+line-height: 24px;
+}
+.two span{
+background-color: rgba(0,0,0,0.2);
+display: inline-block;
+height: 24px;
+width: 24px;
+line-height: 24px;
+border-radius: 12px;
+}
+.three {
+display: block;
+margin: 0 10px 10px;
+padding: 10px;
+font-size: 16px;
+line-height: 20px;
+background-color: rgba(0,0,0,0.2);
+border-radius: 5px;
+cursor: pointer;
+}
+.four{
+font-size: 14px;
+text-align: justify;
+padding: 0 10px;
+}
+</style>
+
+</head>
+<body>
+
+<div id="base" class="base" style="opacity: 0;transition: opacity .5s ease;">
+<p id="one" class="one">Welcome back SPARKY!</p>
+<div class="overBase">
+  <p id="two" class="two">My objective is to <span>➜</span></p>
+  <p id="four" class="four">Do you know? Digital Marketing is very easy. It's just like doing facebook and browsing websites.</p>
+  <p id="selObj" class="three" onClick="selectObj()">Select Objective</p>
+  <p id="conti" class="three" onClick="continueReading()">Continue</p>
+  <p id="choi1" class="three" onClick="business()">Promote My Business</p>
+  <p id="choi2" class="three" onClick="blog()">Making Money Online</p>
+  <p id="choi3" class="three" onClick="pro()">Become A Webmaster</p>
+</div>
+</div>
+
+</body>
+</html>
