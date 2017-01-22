@@ -117,9 +117,19 @@ padding: 5px 5px 6px 6px;
 }
 .is-open{
 background-color: rgba(0,0,0,0.5);
+transition: background-color .4s;
+-webkit-transition: background-color .4s;
+-webkit-transform: translateZ(0);
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
 }
 .is-closed{
 background-color: rgba(0,0,0,0.2);
+transition: background-color .4s;
+-webkit-transition: background-color .4s;
+-webkit-transform: translateZ(0);
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
 }
 .logo{
 display: block;
@@ -232,9 +242,9 @@ min-height: 100%;
 background-color: #f7f7f7;
 margin-left: 0px;
 z-index: 99;
-transition: margin .2s ease-in;
--webkit-transition: margin .2s ease-in;
--webkit-transform: translate3d(0, 0, 0);
+transition: margin-left .4s;
+-webkit-transition: margin-left .4s;
+-webkit-transform: translateZ(0);
 -webkit-backface-visibility: hidden;
 -webkit-perspective: 1000;
 }
