@@ -238,8 +238,33 @@ display: block;
 width: 100%;
 min-height: 100%;
 background-color: #f7f7f7;
-margin-left: 0px;
 z-index: 99;
+}
+.bodyBase.openMenu{
+animation: openMenuAni .3s;
+-webkit-animation: openMenuAni .3s;
+margin-left: 270px;
+}
+.bodyBase.closeMenu{
+animation: openMenuAni .3s;
+-webkit-animation: closeMenuAni .3s;
+margin-left: 0px;
+}
+@-webkit-keyframes openMenuAni {
+    from {margin-left: 0px;}
+    to {margin-left: 270px;}
+}
+@keyframes openMenuAni {
+    from {margin-left: 0px;}
+    to {margin-left: 270px;}
+} 
+@-webkit-keyframes closeMenuAni {
+    from {margin-left: 270px;}
+    to {margin-left: 0px;}
+}
+@keyframes closeMenuAni {
+    from {margin-left: 270px;}
+    to {margin-left: 0px;}
 }
 
 /*--------------AJAX Content-------------*/

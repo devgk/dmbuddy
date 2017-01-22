@@ -41,34 +41,12 @@ function toggleMenu(num){
 y = num;
 
 if (y == 1){ 
-
-var i = 1;                     
-function openMenu () {
-   setTimeout(function () { document.getElementById('bodyBase').style.marginLeft = (i*5) + "px";
-      i++;                    
-      if (i < 55) {  
-          openMenu();   
-      }
-   }, 1)
-}
-openMenu();
-
+document.getElementById('bodyBase').className = "bodyBase openMenu";
 document.getElementById("draw").className = "navMenuLeft is-open";
 document.getElementById('draw').onclick = function () { toggleMenu(0) };
 }
 if (y == 0){
-
-var i = 54;                     
-function closeMenu () {
-   setTimeout(function () { document.getElementById('bodyBase').style.marginLeft = (i*5) + "px";
-      --i;                    
-      if (i >= 0) {  
-          closeMenu();   
-      }
-   }, 1)
-}
-closeMenu();
-    
+document.getElementById('bodyBase').className = "bodyBase closeMenu"; 
 document.getElementById("draw").className = "navMenuLeft is-closed";
 document.getElementById('draw').onclick = function () { toggleMenu(1) };
 }
