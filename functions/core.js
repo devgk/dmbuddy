@@ -43,15 +43,15 @@ y = num;
 if (y == 1){ 
 
 var i = 1;                     
-function myLoop () {
+function openMenu () {
    setTimeout(function () { document.getElementById('bodyBase').style.marginLeft = (i*5) + "px";
       i++;                    
       if (i < 55) {  
-          myLoop();   
-      }                        
+          openMenu();   
+      }
    }, 1)
 }
-myLoop();
+openMenu();
 
 document.getElementById("draw").className = "navMenuLeft is-open";
 document.getElementById('draw').onclick = function () { toggleMenu(0) };
@@ -59,15 +59,15 @@ document.getElementById('draw').onclick = function () { toggleMenu(0) };
 if (y == 0){
 
 var i = 54;                     
-function myLoop () {
+function closeMenu () {
    setTimeout(function () { document.getElementById('bodyBase').style.marginLeft = (i*5) + "px";
       --i;                    
       if (i >= 0) {  
-          myLoop();   
-      }                        
+          closeMenu();   
+      }
    }, 1)
 }
-myLoop();
+closeMenu();
     
 document.getElementById("draw").className = "navMenuLeft is-closed";
 document.getElementById('draw').onclick = function () { toggleMenu(1) };
