@@ -39,14 +39,13 @@ setTimeout(toggleMenu, 10, 0);
 
 function toggleMenu(num){
 y = num;
-
-if (y == 1){ 
-document.getElementById('bodyBase').className = "bodyBase openMenu";
+if (y == 1){
+document.getElementById('bodyBase').style.marginLeft = '270px';
 document.getElementById("draw").className = "navMenuLeft is-open";
 document.getElementById('draw').onclick = function () { toggleMenu(0) };
 }
 if (y == 0){
-document.getElementById('bodyBase').className = "bodyBase closeMenu"; 
+document.getElementById('bodyBase').style.marginLeft = '0px';
 document.getElementById("draw").className = "navMenuLeft is-closed";
 document.getElementById('draw').onclick = function () { toggleMenu(1) };
 }
