@@ -41,13 +41,13 @@ function toggleMenu(num){
 y = num;
 if (y == 1){
 document.getElementById('bodyBase').style.marginLeft = '270px';
-document.getElementById("hamburger").className = "navMenuLeft hamburglar is-open";
-document.getElementById('hamburger').onclick = function () { toggleMenu(0) };
+document.getElementById("draw").className = "navMenuLeft is-open";
+document.getElementById('draw').onclick = function () { toggleMenu(0) };
 }
 if (y == 0){
 document.getElementById('bodyBase').style.marginLeft = '0px';
-document.getElementById("hamburger").className = "navMenuLeft hamburglar is-closed";
-document.getElementById('hamburger').onclick = function () { toggleMenu(1) };
+document.getElementById("draw").className = "navMenuLeft is-closed";
+document.getElementById('draw').onclick = function () { toggleMenu(1) };
 }
 }
 function toggleSubMenu(num){
