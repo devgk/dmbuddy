@@ -240,11 +240,6 @@ min-height: 100%;
 background-color: #f7f7f7;
 margin-left: 0px;
 z-index: 99;
-transition: margin-left .3s ease;
--webkit-transition: margin-left .3s ease;
--webkit-transform: translate3d(0, 0, 0);
--webkit-backface-visibility: hidden;
--webkit-perspective: 1000;
 }
 
 /*--------------AJAX Content-------------*/
