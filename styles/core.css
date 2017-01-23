@@ -15,10 +15,10 @@ top:0;
 left: 0;
 width: 100%;
 height: 100%;
-background: url(../images/back.png);
 background-position: center center;
+background: url(../images/loading.png) no-repeat center/40%, url(../images/background.png) repeat center/25%;
 z-index: 9999999;
-opacity: .9;
+opacity: 1;
 -webkit-transition: opacity .15s;
 transition: opacity .15s;
 }

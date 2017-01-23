@@ -22,7 +22,7 @@ setTimeout(endLoading, 150);
 }
 function endLoading(){
 document.getElementById("loadingScreen").style.display = "none";
-document.getElementById('loadingScreen').style.opacity = '0.9';
+document.getElementById('loadingScreen').style.opacity = '1';
 }
 
 function hammer(){
