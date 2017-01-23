@@ -14,11 +14,11 @@
     
 <div class="chapterNavigation">
 <div class="grid">
-<div id="previousArticle" class="previousArticle">
+<div id="previousArticle" class="previousArticle" style="width: 98%;">
     <a href="#"
     onClick="return chapter1(02);">
 <p><img src="../images/next.png"><span>Previous Topic</span></p></a></div>
-<div id="nextArticle" class="nextArticle">
+<div id="nextArticle" class="nextArticle" style="display: none;">
     <a href="#"
     onClick="">
 <p><span>Next Topic</span><img src="../images/next.png"></p></a></div>

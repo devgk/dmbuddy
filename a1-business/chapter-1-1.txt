@@ -14,11 +14,11 @@
     
 <div class="chapterNavigation">
 <div class="grid">
-<div id="previousArticle" class="previousArticle">
+<div id="previousArticle" class="previousArticle" style="display: none;">
     <a href="/wordpress/dev/dmbuddy/scps01.html"
     onClick="">
 <p><img src="../images/next.png"><span>Previous Topic</span></p></a></div>
-<div id="nextArticle" class="nextArticle">
+<div id="nextArticle" class="nextArticle" style="width: 98%;">
     <a href="#"
     onClick="return chapter1(02);">
 <p><span>Next Topic</span><img src="../images/next.png"></p></a></div>

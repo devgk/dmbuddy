@@ -18,7 +18,7 @@ height: 100%;
 background: url(../images/back.png);
 background-position: center center;
 z-index: 9999999;
-opacity: 1;
+opacity: .9;
 -webkit-transition: opacity .15s;
 transition: opacity .15s;
 }
@@ -275,23 +275,23 @@ background: repeating-linear-gradient(
 .chapterNavigation a{
 color: #444;
 }
-.previousArticle, .nextArticle{
-width: 48%;
-display: inline-block;
-margin: 0 0.7%;
-border-radius: 5px;
+.previousArticle, .nextArticle {
+    width: 48%;
+    display: inline-block;
+    margin: 4px 0.7% 0;
+    border-radius: 5px;
 }
 .previousArticle p{
 -webkit-filter: grayScale(1) contrast(1.4);
 }
 .previousArticle p, .nextArticle p{
 display: block;
-height: 40px;
+height: 36px;
 width: 170px;
 margin: 0 auto;
 background-color: FBD75B;
 border-radius: 8px;
-box-shadow: 0 0 5px #555;
+box-shadow: 0 0 0 3px #aaa;
 border: 2px solid #E36C46;
 }
 .previousArticle img, .nextArticle img {

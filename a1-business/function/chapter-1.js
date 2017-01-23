@@ -11,7 +11,6 @@ if(x==01){
     };
     xhttp.open("GET", "chapter-1-1.txt", true);
     xhttp.send();
-    setTimeout(startingEnd,10); //Start Chapter
 }
 if(x==02){
     startLoading();
@@ -34,17 +33,6 @@ if(x==03){
     };
     xhttp.open("GET", "chapter-1-3.txt", true);
     xhttp.send();
-    setTimeout(removeEnd,10); //close chapters
 }
 return null;
-}
-
-function startingEnd(){
-document.getElementById('previousArticle').style.display = 'none';
-document.getElementById('nextArticle').style.width = '98%';
-}
-
-function removeEnd(){
-document.getElementById('nextArticle').style.display = 'none';
-document.getElementById('previousArticle').style.width = '98%';
 }

@@ -10,7 +10,6 @@ hammer();
 try {
 chapter1(01);
 }catch(err) {}
-setTimeout(removeLoading, 100);
 }
 
 function startLoading(){
@@ -23,7 +22,7 @@ setTimeout(endLoading, 150);
 }
 function endLoading(){
 document.getElementById("loadingScreen").style.display = "none";
-document.getElementById('loadingScreen').style.opacity = '1';
+document.getElementById('loadingScreen').style.opacity = '0.9';
 }
 
 function hammer(){
