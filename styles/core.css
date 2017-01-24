@@ -16,7 +16,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background-position: center center;
-background: url(../images/loading.png) no-repeat center/40%, url(../images/background.png) repeat center/25%;
+background: url(../images/loading.png) no-repeat center/260px, url(../images/background.png) repeat center/150px;
 z-index: 9999999;
 opacity: 1;
 -webkit-transition: opacity .15s;
@@ -42,6 +42,8 @@ body a{
 text-decoration: none;
 -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+h6,h5{margin: 0;}
+ul, li {margin: 0 auto;}
 .space{
 width: 100%;
 height: 10px;
@@ -412,4 +414,77 @@ margin-top: -8px;
 width: 39px;
 height: 39px;
 }
+}
+
+/*---------------------------------------------*/
+.headSlideBusiness{
+display: block;
+width: 100%;
+height: 300px;
+background: url(/images/noisy-net.png) repeat center/80px, url(/images/business-home.jpg) no-repeat center/cover;
+}
+.headSlideBusiness li{
+color: #fff;
+font-size: 16px;
+line-height: 20px;
+font-weight: normal;
+}
+
+.headSlideBusiness ul {
+list-style: none;
+max-width: 300px;
+padding: 10px 5px;
+margin-right: 0;
+}
+
+.headSlideBusiness ul li:before{
+content: '';
+display: inline-block;
+margin-bottom: -1px;
+padding: 0 10px 0 0;
+height: 14px;
+width: 14px;
+background: url(/images/circle.png) no-repeat;
+background-size: contain;
+background-position: bottom;
+}
+
+.startCourse{
+display: block;
+width: 100%;
+background-color: #333;
+text-align: center;
+padding: 20px 0;
+border-top: 2px solid #444;
+border-bottom: 2px solid #444;
+}
+
+.startCourse h5{
+color: #f7f7f7;
+font-size: 20px;
+padding: 5px;
+line-height: 24px;
+font-weight: normal;
+}
+
+a.whiteButton{
+padding: 10px 20px;
+display: block;
+width: 160px;
+line-height: 24px;
+margin: auto;
+background-color: #f7f7f7;
+border: 2px solid #ccc;
+border-radius: 8px;
+text-transform: uppercase;
+color: #333;
+font-weight: bold;
+margin: 10px auto 0;
+box-shadow: 0 0 8px #000;
+}
+a.whiteButton:active{
+box-shadow: 0 0 2px #000;
+width: 156px;
+line-height: 20px;
+margin: 12px auto 2px;
 }
