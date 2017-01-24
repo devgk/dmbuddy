@@ -16,7 +16,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background-position: center center;
-background: #333 url(file:///android_asset/images/background.png);
+background: #333 url(http://dmbuddy-app.webenfolds.com/images/background.png);
 background-repeat: repeat;
 background-position: center;
 background-size: 150px;
@@ -30,13 +30,13 @@ width: 100%;
 height: 100%;
 }
 .glowLoad{
-background: url(file:///android_asset/images/loading.png);
+background: url(http://dmbuddy-app.webenfolds.com/images/loading.png);
 background-size: 260px;
 background-repeat: no-repeat;
 background-position: center center;
 }
 .maskDark{
-background: url(/images/noisy-net.png);
+background: url(http://dmbuddy-app.webenfolds.com/images/noisy-net.png);
 background-size: 80px;
 background-repeat: repeat;
 }
@@ -440,7 +440,7 @@ height: 39px;
 display: block;
 width: 100%;
 height: 300px;
-background: url(file:///android_asset/images/business-home.jpg);
+background: url(http://dmbuddy-app.webenfolds.com/images/business-home.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -466,7 +466,7 @@ margin-bottom: -1px;
 padding: 0 10px 0 0;
 height: 14px;
 width: 14px;
-background: url(/images/circle.png) no-repeat;
+background: url(http://dmbuddy-app.webenfolds.com/images/circle.png) no-repeat;
 background-size: contain;
 background-position: bottom;
 }
