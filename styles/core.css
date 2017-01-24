@@ -16,11 +16,29 @@ left: 0;
 width: 100%;
 height: 100%;
 background-position: center center;
-background: url(../images/loading.png) no-repeat center/260px, url(../images/background.png) repeat center/150px;
+background: #333 url(../images/background.png);
+background-repeat: repeat;
+background-position: center;
+background-size: 150px;
 z-index: 9999999;
 opacity: 1;
 -webkit-transition: opacity .15s;
 transition: opacity .15s;
+}
+.glowLoad, .maskDark{
+width: 100%;
+height: 100%;
+}
+.glowLoad{
+background: url(../images/loading.png);
+background-size: 260px;
+background-repeat: no-repeat;
+background-position: center center;
+}
+.maskDark{
+background: url(/images/noisy-net.png);
+background-size: 80px;
+background-repeat: repeat;
 }
 
 body{
@@ -416,12 +434,16 @@ height: 39px;
 }
 }
 
+
 /*---------------------------------------------*/
 .headSlideBusiness{
 display: block;
 width: 100%;
 height: 300px;
-background: url(/images/noisy-net.png) repeat center/80px, url(/images/business-home.jpg) no-repeat center/cover;
+background: url(/images/business-home.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 .headSlideBusiness li{
 color: #fff;

@@ -16,15 +16,11 @@
 
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    
-<script type="text/javascript">
-setTimeout(removeLoading, 100);
-</script>
 </head>
 <body>
 <div class="container">
     
-<div class="fixedElement loadingScreen" id="loadingScreen"></div>
+<div class="fixedElement loadingScreen" id="loadingScreen"><div class="glowLoad"></div></div>
 
 <div class="fixedElement header">
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
@@ -79,6 +75,7 @@ setTimeout(removeLoading, 100);
     
     <div id="innerContent">
         <div class="headSlideBusiness">
+        <div class="maskDark">
         <div class="grid">
             <h6>
             <ul>
@@ -88,6 +85,7 @@ setTimeout(removeLoading, 100);
                 <li>Keep Track of Latest DM Updates</li>
             </ul>
             </h6>
+        </div>
         </div>
         </div>
         <div class="startCourse">
@@ -104,5 +102,8 @@ setTimeout(removeLoading, 100);
 </div><!----Body Base----->
 
 </div><!----Container----->
+<script type="text/javascript">
+setTimeout(removeLoading, 100);
+</script>
 </body>
 </html>
