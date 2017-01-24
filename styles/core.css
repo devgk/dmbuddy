@@ -60,6 +60,7 @@ body a{
 text-decoration: none;
 -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+h2{margin-bottom: 10px;text-align: left;}
 h6,h5{margin: 0;}
 ul, li {margin: 0 auto;}
 .space{
@@ -249,12 +250,14 @@ padding: 2px 6px;
 background-color: #555;
 color: #eee;
 border-radius: 4px;
+text-align: left;
 }
 .chapterTitle p{
 display: block;
 min-height: 50px;
 line-height: 50px;
 margin: 0;
+text-align: justify;
 }
 .chapterTitle img{
 display: block;
@@ -266,6 +269,13 @@ height: 50px;
 .contentBox{
 text-align: justify;
 padding: 10px 5px 30px;
+}
+.contentBox p{
+margin: 0 auto 20px;
+}
+.contentBox ol{
+margin: 0;
+text-align: left;
 }
 .contentBox img{
 display: block;
