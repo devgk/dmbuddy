@@ -35,12 +35,8 @@ background-size: 260px;
 background-repeat: no-repeat;
 background-position: center center;
 }
-.maskDark{
-background: url(http://dmbuddy-app.webenfolds.com/images/noisy-net.png);
-background-size: 80px;
-background-repeat: repeat;
-}
 
+/*------------HTML ELEMENTS-------------*/
 body{
 width: 100%;
 margin: 0;
@@ -51,8 +47,6 @@ overflow-x: hidden;
 color: #555;
 padding-top: 50px;
 }
-
-/*------------HTML ELEMENTS-------------*/
 body p{
 margin: 0;
 }
@@ -63,10 +57,24 @@ text-decoration: none;
 h2{margin-bottom: 10px;text-align: left;}
 h6,h5{margin: 0;}
 ul, li {margin: 0 auto;}
+em{font-weight: bold;
+color: #666;
+}
+hi{
+padding: 0 5px;
+border-radius: 4px;
+background-color: #F9E6A5;
+box-shadow: 0 0 0 1px #F7F7F7 inset;
+}
 .space{
 width: 100%;
 height: 10px;
 display: block;
+}
+.maskDark{
+background: url(http://dmbuddy-app.webenfolds.com/images/noisy-net.png);
+background-size: 80px;
+background-repeat: repeat;
 }
 
 /*--------------TOP Header--------------*/
@@ -268,7 +276,7 @@ height: 50px;
 .contentBox h1{text-align: left;}
 .contentBox{
 text-align: justify;
-padding: 10px 5px 30px;
+padding: 10px 15px 30px;
 }
 .contentBox p{
 margin: 0 auto 20px;
@@ -356,6 +364,57 @@ display: block;
 text-align: right;
 }
 
+/*---------------CHAT BOX------------------*/
+.chatBox{
+margin: 0 5px 20px;
+padding: 10px 10px 0;
+border-radius: 10px;
+border: 2px solid #DDDDDD;
+background: repeating-linear-gradient(
+  135deg,
+  #f4f4f4,
+  #f4f4f4 10px,
+  #eeeeee 10px,
+  #eeeeee 20px 
+);
+}
+.chatBox p{
+display: block;
+height: auto;
+overflow: auto;
+padding: 5px;
+box-shadow: 0 0 0 2px rgba(0,0,0,0.2);
+background-color: rgba(0,0,0,0.1);
+border-radius: 4px;
+margin-bottom: 10px;
+}
+.chatBox p img{
+float: left;
+height: 50px;
+width: 50px;
+border: 3px solid #ddd;
+border-radius: 50%;
+}
+nm{
+font-weight: bold;
+float: left;
+text-transform: uppercase;
+background-color: #333;
+color: #FBD75B;
+padding: 5px;
+margin-left: 5px;
+border-radius: 4px;
+margin-top: 3px;
+}
+.chatBox p span{
+margin-left: 60px;
+margin-top: 36px;
+display: block;
+padding: 5px;
+background-color: #f9f9f9;
+border-radius: 4px;
+}
+
 /*--------------Chapter List---------------*/
 .chapterListBase{
 margin: 5px 5px 0;
@@ -412,6 +471,9 @@ background-color: #FBD75B;
 
 /*----------------Responsive-----------------*/
 @media only screen and (max-width: 500px){
+.contentBox{
+padding: 10px 5px 30px;
+}
 .previousArticle, .nextArticle{
 width: 180px;
 display: block;
@@ -435,41 +497,38 @@ display: block;
 line-height: 30px;
 }
 .chapterTitle img{
-float: right;
 top: 0;
-right: 0;
-margin-top: -8px;
+right: 5px;
+margin-top: 0px;
 width: 39px;
 height: 39px;
+position: absolute;
 }
 }
 
 
 /*---------------------------------------------*/
-.headSlideBusiness{
+.headSlide{
 display: block;
 width: 100%;
 height: 300px;
-background: url(http://dmbuddy-app.webenfolds.com/images/business-home.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+background-repeat: no-repeat !important;
+background-position: center !important;
+background-size: cover !important;
 }
-
-.headSlideBusiness ul {
+.headSlide ul {
 list-style: none;
 max-width: 300px;
 padding: 10px 5px;
 margin-right: 0;
 }
-.headSlideBusiness li{
+.headSlide li{
 color: #fff;
 font-size: 16px;
 line-height: 20px;
 font-weight: normal;
 }
-
-.headSlideBusiness ul li:before{
+.headSlide ul li:before{
 content: '';
 display: inline-block;
 margin-bottom: -1px;
@@ -490,7 +549,6 @@ padding: 20px 0;
 border-top: 2px solid #444;
 border-bottom: 2px solid #444;
 }
-
 .startCourse h5{
 color: #f7f7f7;
 font-size: 20px;

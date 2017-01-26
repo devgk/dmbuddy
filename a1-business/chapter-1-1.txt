@@ -1,6 +1,6 @@
 <div class="chapterTitle">
-<div class="grid"><p><span class="chapterx">
-    Chapter 1.1</span> Introduction
+<div class="grid"><p style="text-align: left;"><span class="chapterx">
+    Chapter 1.1</span> Introduction to Digital Marketing Course
 <a href="../a1.html"><img src="../images/closetopic.png"></a></p></div>
 </div>
 
@@ -19,7 +19,6 @@
     <li>Learn how to create effective Digital Marketing strategies for your business.</li>
     <li>Hire skilled Digital Marketers according to your need.</li>
     <li>Track and monitor your Digital Marketing campaign.</li>
-    <li>Be a part of Digital World.</li>
 </div>
 
     
@@ -45,10 +44,10 @@
     <p>Chapter 1 - Topics List</p>
 </div>
 <p class="topicList active">
-    <span>1.1</span> Learn Digital Marketing
+    <span>1.1</span> Introduction to Digital Marketing Course
 </p>
 <p class="topicList" onClick="return chapter1(02);">
-    <span>1.2</span> Introduction to Digital Marketing
+    <span>1.2</span> Understanding Digital Marketing
 </p>
 <p class="topicList" onClick="return chapter1(03);">
     <span>1.3</span> Digital Marketing Fundamentals

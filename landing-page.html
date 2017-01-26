@@ -10,92 +10,6 @@
     
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 
-<script type="text/javascript">
-window.onload=function(){autoChk();};
-function autoChk(){
-var status = readCookie("userStatus");
-if(status == '1'){
-setTimeout(continueFlow, 10);
-}
-else if(status == '2'){
-setTimeout(continueFlow, 10);
-}
-else if(status == '3'){
-setTimeout(continueFlow, 10);
-}
-else if(status == '4'){
-setTimeout(resetFlow, 10);
-}
-else{setTimeout(userSetup, 10);}
-}
-function continueFlow(){
-document.getElementById('selObj').style.display="none";
-document.getElementById('two').style.display="none";
-document.getElementById('conti').style.display="block";
-document.getElementById('choi1').style.display="none";
-document.getElementById('choi2').style.display="none";
-document.getElementById('choi3').style.display="none";
-document.getElementById('base').style.opacity="1";
-}
-function resetFlow(){
-document.getElementById('one').innerHTML = "Select Your Objective!";
-document.getElementById('selObj').style.display="none";
-document.getElementById('four').style.display="none";
-document.getElementById('two').style.display="block";
-document.getElementById('conti').style.display="none";
-document.getElementById('choi1').style.display="block";
-document.getElementById('choi2').style.display="block";
-document.getElementById('choi3').style.display="block";
-document.getElementById('base').style.opacity="1";
-}
-function userSetup(){
-document.getElementById('one').innerHTML = "Welcome to <b>DM BUDDY</b>";
-document.getElementById('four').innerHTML = "Thanks for chosing <b>DM BUDDY</b>! Please select your objective, so that we can serve you the perfect digital marketing study materials.";
-document.getElementById('selObj').style.display="block";
-document.getElementById('two').style.display="none";
-document.getElementById('conti').style.display="none";
-document.getElementById('choi1').style.display="none";
-document.getElementById('choi2').style.display="none";
-document.getElementById('choi3').style.display="none";
-document.getElementById('base').style.opacity="1";
-}
-function selectObj(){
-document.getElementById('one').innerHTML = "Select Your Objective!";
-document.getElementById('selObj').style.display="none";
-document.getElementById('four').style.display="none";
-document.getElementById('two').style.display="block";
-document.getElementById('conti').style.display="none";
-document.getElementById('choi1').style.display="block";
-document.getElementById('choi2').style.display="block";
-document.getElementById('choi3').style.display="block";
-}
-function continueReading(){
-var status = readCookie("userStatus");
-if(status == '1'){
-window.location = "../a1.html";
-}
-else if(status == '2'){
-window.location = "../a2.html";
-}
-else if(status == '3'){
-window.location = "../a3.html";
-}
-}
-function readCookie(cookieName){
-var results = document.cookie.match(cookieName + '=(.*?)(;|$)');
-if(results){return(results[1]);}
-else{return null;}
-}
-
-    
-function business(){document.cookie = "userStatus=1;";
-window.location = "../a1.html";}
-function blog(){document.cookie = "userStatus=2;";
-window.location = "../a2.html";}
-function pro(){document.cookie = "userStatus=3;";
-window.location = "../a3.html";}
-</script>
-
 <style type="text/css">
 body{
 margin: 0;
@@ -172,16 +86,10 @@ padding: 0 10px;
 </head>
 <body>
 
-<div id="base" class="base" style="opacity: 0;transition: opacity .5s ease;">
+<div id="base" class="base">
 <p id="one" class="one">Welcome back SPARKY!</p>
 <div class="overBase">
-  <p id="two" class="two">My objective is to <span>➜</span></p>
-  <p id="four" class="four">Do you know? Digital Marketing is very easy. It's just like doing facebook and browsing websites.</p>
-  <p id="selObj" class="three" onClick="selectObj()">Select Objective</p>
-  <p id="conti" class="three" onClick="continueReading()">Continue</p>
-  <p id="choi1" class="three" onClick="business()">Promote My Business</p>
-  <p id="choi2" class="three" onClick="blog()">Making Money Online</p>
-  <p id="choi3" class="three" onClick="pro()">Become A Webmaster</p>
+  <p id="four" class="four">DM Buddy is officially launching on 12th of feb. From 12th of feb you can find and download the app directly from google play store.</p>
 </div>
 </div>
 
