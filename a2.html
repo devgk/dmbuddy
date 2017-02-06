@@ -7,6 +7,13 @@
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="pragma" content="no-cache" />
 <meta name="robots" content="noindex,nofollow">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//google-analytics.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//ssl.google-analytics.com">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    
+<title>Make Money Online | Landing Page</title>
 
 <link rel="stylesheet" href="styles/core.css">
 
@@ -14,8 +21,22 @@
 <script type="text/javascript" src="functions/hammer.min.js"></script>
 <script type="text/javascript" src="functions/hammer-time.min.js"></script>
 
+<style type="text/css">
+.logo::after{
+content: "MAKE MONEY ONLINE";
+display: block;
+width: 145px;
+margin: 0 auto;
+margin-right: 5px;
+font-size: 12px;
+line-height: 10px;
+background-color: #fff;
+padding: 4px 5px;
+border-radius: 3px;
+color: #0086B5;
+}
+</style>
 
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -24,9 +45,9 @@
 
 <div class="fixedElement header">
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
-    <img src="images/drwa.png">
+    <img src="images/drawer.png">
     </div>
-    <a href="/home.html" class="logo">DM BUDDY</a>
+    <a href="#" onClick="resetObjective();" class="logo">DM BUDDY</a>
 </div>
 
 <div class="fixedElement headerLeft" id="headerLeft">
@@ -74,23 +95,16 @@
 <!-----Inner content------->
     
     <div id="innerContent">
-        <div style="background: url(http://dmbuddy-app.webenfolds.com/images/business-home.jpg);" class="headSlide">
-        <div class="maskDark">
+        <img class="headImg" src="images/business-home.jpg" onload="removeLoading()">
+        <div class="startCourse">
         <div class="grid">
-            <h6>
-            <ul>
+            <div class="headCTA">
+                <ul>
                 <li>Explicitly Created for Businessman</li>
                 <li>Learn To Promote Business Online</li>
                 <li>Completely Free Course</li>
                 <li>Keep Track of Latest DM Updates</li>
-            </ul>
-            </h6>
-        </div>
-        </div>
-        </div>
-        <div class="startCourse">
-        <div class="grid">
-            <div>
+                </ul>
                 <h5>Digital Marketing Course for Business Promotion</h5>
                 <a class="whiteButton" href="a1-business/chapter-1.html">Take Course</a>
             </div>
@@ -102,6 +116,5 @@
 </div><!----Body Base----->
 
 </div><!----Container----->
-<img src="http://dmbuddy-app.webenfolds.com/images/business-home.jpg" style="display: none;" onload="removeLoading()"/>
 </body>
 </html>

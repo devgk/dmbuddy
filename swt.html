@@ -13,8 +13,8 @@
 <link rel="dns-prefetch" href="//ssl.google-analytics.com">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     
-<title>Landing Page</title>
-    
+<title>Objective Switch</title>
+
 <link rel="stylesheet" href="styles/cover.css">
 <script type="text/javascript" src="functions/core.js"></script>
 <script type="text/javascript" src="functions/check.js"></script>
@@ -27,14 +27,7 @@
 <div id="somebackground">
 <div id="base" class="contentBase">
     
-<h1 id="one">Welcome back SPARKY!</h1>
-<p id="welcomeNote">Do you know? Digital Marketing is very easy. It's just like doing facebook and browsing websites.</p>
-<a id="selObj" class="button" onClick="selectObj()">
-    Select Objective
-</a>
-<a id="continue" class="button" onClick="continueReading()">
-    Continue
-</a>
+<h1>Select your objective</h1>
 <a id="choice1" class="button" onClick="business()">
     Promote my business
 </a>
@@ -51,7 +44,10 @@
 </div>
 </div>
 <script>
-window.onload=function(){autoChk();};
+window.onload=function(){
+    showBase();
+    removeLoading();
+};
 </script>
 </body>
 </html>

@@ -30,18 +30,74 @@ width: 100%;
 height: 100%;
 }
 .glowLoad{
-background: url(http://dmbuddy-app.webenfolds.com/images/loading.png);
-background-size: 260px;
-background-repeat: no-repeat;
-background-position: center center;
+width: 80px;
+height: 80px;
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -40px;
+margin-left: -40px;
+border-radius: 50%;
+text-align: center;
+line-height: 80px;
+font-weight: bold;
+color: #333;
+background-color: #FFC000;
 }
-
+.glowLoad::after{
+content: "";
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+border-radius: 50%;
+width: 80px;
+height: 80px;
+margin-top: -45px;
+margin-left: -45px;
+border: 5px solid #FFC000;
+-webkit-animation: gblink .3s infinite;
+animation: gblink .3s infinite;
+}
+@-webkit-keyframes gblink{
+    0%{
+        width: 80px;
+        height: 80px;
+        margin-top: -45px;
+        margin-left: -45px;
+        opacity: 1;
+    }
+    100%{
+        width: 160px;
+        height: 160px;
+        margin-top: -85px;
+        margin-left: -85px;
+        opacity: 0;
+    }
+}
+@keyframes gblink{
+    0%{
+        width: 80px;
+        height: 80px;
+        margin-top: -45px;
+        margin-left: -45px;
+        opacity: 1;
+    }
+    100%{
+        width: 160px;
+        height: 160px;
+        margin-top: -85px;
+        margin-left: -85px;
+        opacity: 0;
+    }
+}
 /*------------HTML ELEMENTS-------------*/
 body{
 width: 100%;
 margin: 0;
 padding: 0;
-font-family: 'PT Sans';
+font-family: 'PT Sans', verdana;
 letter-spacing: 0.6px;
 overflow-x: hidden;
 color: #555;
@@ -132,19 +188,6 @@ margin-right: 0;
 font-size: 25px;
 line-height: 25px;
 text-decoration: none;
-}
-.logo::after{
-content: "BUSINESS PROMOTION";
-display: block;
-width: 145px;
-margin: 0 auto;
-margin-right: 5px;
-font-size: 12px;
-line-height: 10px;
-background-color: #fff;
-padding: 4px 5px;
-border-radius: 3px;
-color: #0086B5;
 }
 
 /*--------------Left Menu---------------*/
@@ -364,19 +407,60 @@ display: block;
 text-align: right;
 }
 
+/*----------------Tabel-------------------*/
+.scrollBase {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow-x: scroll !important;
+}
+table.dmtable {
+    min-width: 400px;
+    width: 100%;
+}
+.dmtable tbody {
+    width: 100%;
+}
+.dmtable tbody tr {
+    width: 100%;
+    text-align: left;
+}
+.dmtable tbody tr th {
+    width: 50%;
+    background: #ececec;
+    padding: 5px;
+    font-size: 120%;
+}
+.dmtable tbody tr td {
+    width: 50%;
+    background: #f0f0f0;
+    padding: 5px;
+}
+
 /*---------------CHAT BOX------------------*/
-.chatBox{
-margin: 0 5px 20px;
-padding: 10px 10px 0;
-border-radius: 10px;
-border: 2px solid #DDDDDD;
-background: repeating-linear-gradient(
-  135deg,
-  #f4f4f4,
-  #f4f4f4 10px,
-  #eeeeee 10px,
-  #eeeeee 20px 
-);
+.chatBox {
+    margin: 20px 5px 20px;
+    padding: 10px 10px 0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background: repeating-linear-gradient(
+ 135deg,
+ #f4f4f4,
+ #f4f4f4 10px,
+ #eeeeee 10px,
+ #eeeeee 20px 
+ );
+}
+.chatBox::before {
+    content: "BUDDIES TALK";
+    display: block;
+    margin: -35px auto 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #f7f7f7;
+    font-size: 120%;
+    background-color: #999;
+    border-radius: 8px 8px 0 0;
 }
 .chatBox p{
 display: block;
@@ -414,6 +498,23 @@ padding: 5px;
 background-color: #f9f9f9;
 border-radius: 4px;
 }
+
+funny, angry, confused, happy,
+smile, love, quiet, mad {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: -4px 2px -7px 2px;
+    background-size: contain;
+}
+funny{background-image: url(/images/emo/funny.png);}
+angry {background-image: url(/images/emo/angry.png);}
+confused {background-image: url(/images/emo/confused.png);}
+happy {background-image: url(/images/emo/happy.png);}
+smile {background-image: url(/images/emo/smile.png);}
+love {background-image: url(/images/emo/love.png);}
+quiet {background-image: url(/images/emo/quiet.png);}
+mad {background-image: url(/images/emo/mad.png);}
 
 /*--------------Chapter List---------------*/
 .chapterListBase{
@@ -547,7 +648,7 @@ margin-bottom: -1px;
 padding: 0 10px 0 0;
 height: 14px;
 width: 14px;
-background: url(http://dmbuddy-app.webenfolds.com/images/circle.png) no-repeat;
+background: url(http://dmbuddy-app.webenfolds.com/images/check.png) no-repeat;
 background-size: contain;
 background-position: bottom;
 }

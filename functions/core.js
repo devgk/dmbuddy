@@ -6,16 +6,24 @@ window.onload = function(){startScript();};
 function startScript(){
 try {
 hammer();
-}catch(err) {}
+}catch(err) {} //Load Hammer
 try {
-chapter1(01);
-}catch(err) {}
+loadChapter();
+}catch(err) {} //Load Chapter
+try {
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-91432347-1', 'auto');
+ga('send', 'pageview');
+}catch(err) {} //Load GA
 }
 
 function startLoading(){
 document.getElementById("loadingScreen").style.display = "block";
 }
-function removeLoading(){setTimeout(noLoad, 100);}
+function removeLoading(){setTimeout(noLoad, 10);}
 function noLoad(){
 document.getElementById('loadingScreen').style.opacity = '0';
 setTimeout(endLoading, 150); 
@@ -63,4 +71,9 @@ document.getElementById('plus').style.webkitTransform = 'rotate(0)';
 document.getElementById('plus').style.backgroundColor = '#FBD75B';
 document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(1) };
 }
+}
+
+function resetObjective(){
+document.cookie = "userStatus=4;path=/";
+window.location = "/swt.html";
 }

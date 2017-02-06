@@ -19,19 +19,23 @@
     <li>Learn how to create effective Digital Marketing strategies for your business.</li>
     <li>Hire skilled Digital Marketers according to your need.</li>
     <li>Track and monitor your Digital Marketing campaign.</li>
+    </ol>
 </div>
 
     
 <div class="chapterNavigation">
 <div class="grid">
+
 <div id="previousArticle" class="previousArticle" style="display: none;">
     <a href="/wordpress/dev/dmbuddy/scps01.html"
     onClick="">
+    
 <p><img src="../images/next.png"><span>Previous Topic</span></p></a></div>
 <div id="nextArticle" class="nextArticle" style="width: 98%;">
     <a href="#"
     onClick="return chapter1(02);">
 <p><span>Next Topic</span><img src="../images/next.png"></p></a></div>
+
 </div>
 </div>
 
@@ -43,15 +47,23 @@
 <div class="chapterList">
     <p>Chapter 1 - Topics List</p>
 </div>
+
 <p class="topicList active">
     <span>1.1</span> Introduction to Digital Marketing Course
 </p>
-<p class="topicList" onClick="return chapter1(02);">
+<p class="topicList" onClick="return chapter1(03);">
     <span>1.2</span> Understanding Digital Marketing
 </p>
 <p class="topicList" onClick="return chapter1(03);">
-    <span>1.3</span> Digital Marketing Fundamentals
+    <span>1.3</span> Importance of Digital Marketing
 </p>
+<p class="topicList" onClick="return chapter1(04);">
+    <span>1.4</span> Digital marketing approaches
+</p>
+<p class="topicList" onClick="return chapter1(05);">
+    <span>1.5</span> Chapter 1 | Wrapping up
+</p>
+
 </div>
 </div>
 <div class="space"></div>
