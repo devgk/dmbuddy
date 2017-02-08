@@ -50,7 +50,7 @@ document.getElementById('base').style.opacity="1";
 function continueReading(){
 var status = readCookie("userStatus");
 if(status == '1'){
-window.location = "../a1.html";
+window.location = "/a1/home.html";
 }
 else if(status == '2'){
 window.location = "../a2.html";
@@ -66,7 +66,7 @@ else{return null;}
 }
 function business(){
 document.cookie = "userStatus=1;path=/";
-window.location = "../a1.html";
+window.location = "/a1/home.html";
 }
 function blog(){
 document.cookie = "userStatus=2;path=/";

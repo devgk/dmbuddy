@@ -18,6 +18,20 @@ try {
 ga('create', 'UA-91432347-1', 'auto');
 ga('send', 'pageview');
 }catch(err) {} //Load GA
+try {
+function createMenu(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("innerMenu").innerHTML =
+        this.responseText;
+    }
+    };
+    xhttp.open("GET", "nav.txt", true);
+    xhttp.send();
+}
+createMenu();
+}catch(err) {} //Create Menu
 }
 
 function startLoading(){
