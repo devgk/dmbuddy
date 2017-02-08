@@ -53,10 +53,10 @@ if(status == '1'){
 window.location = "/a1/home.html";
 }
 else if(status == '2'){
-window.location = "../a2.html";
+window.location = "/a2/home.html";
 }
 else if(status == '3'){
-window.location = "../a3.html";
+window.location = "/a3/home.html";
 }
 }
 function readCookie(cookieName){
@@ -70,9 +70,9 @@ window.location = "/a1/home.html";
 }
 function blog(){
 document.cookie = "userStatus=2;path=/";
-window.location = "../a2.html";
+window.location = "/a2/home.html";
 }
 function pro(){
 document.cookie = "userStatus=3;path=/";
-window.location = "../a3.html";
+window.location = "/a3/home.html";
 }
