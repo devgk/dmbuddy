@@ -24,7 +24,7 @@
     <a href="#">DM Resourses <img id="plus02" class="transtionElement" src="../images/plus.png"></a>
 </p>
 <p class="subMenu" id="subMenu02">
-    <a href="../az-extra/domain.html" class="subMenuList">Instant Domain Search</a>
+    <a href="../az-extra/domain.html" class="subMenuList">Instant Domain Check</a>
         
     <a href="#subMenuList" class="subMenuList">Buy Domain & Hosting</a>
     

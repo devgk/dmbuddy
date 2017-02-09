@@ -8,20 +8,20 @@ overflow: auto;
 background-image: url(/images/swap-backx.png);
 background-size: contain;
 }
-
 #swapMenu span{
 display: inline-block;
 line-height: 30px;
 margin: 10px auto;
-padding: 5px 10px;
+padding: 3px 10px;
 background-color: #F7F7F7;
 border-radius: 5px;
+border: 2px solid #E7E6E6;
 }
 
 #domain{
 display: block;
-width: 100%;
-min-width: 400px;
+width: 100%; 
+min-width: 320px;
 height: 100%;
 border: 0;
 }
