@@ -30,14 +30,18 @@ border-radius: 3px;
 color: #0086B5;
 }
 </style>
-
-<title>Business Promotion | Jargon</title>
+    
+<link rel="stylesheet" href="../styles/iframe.css">
+    
+<title>Domain Search</title>
 
 </head>
 <body>
 <div class="container">
-    
-<div class="fixedElement loadingScreen" id="loadingScreen"><div class="glowLoad"></div></div>
+
+<div class="fixedElement loadingScreen" id="loadingScreen">
+    <div class="glowLoad"></div>
+</div>
 
 <div class="fixedElement header">
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
@@ -57,22 +61,26 @@ color: #0086B5;
 <!-- END Menu -->
 </div>
 
+<!-- Body Base -->
 <div class="bodyBase transtionElement" id="bodyBase"> 
-<!-----Inner content------->
-    
-    <div id="innerContent">
-        <img class="headImg" src="../images/business-home.jpg" onload="removeLoading()">
-        <div class="startCourse">
-        <div class="grid">
-            <h1>DM Reference</h1>
-            <h1>Under Construction</h1>
-        </div>
-        </div>
+<!-- Inner content -->
+    <div id="swapMenu">
+        <span>Right swap here to open menu</span>
     </div>
+    <external>
+    <iframe id="domain" src="http://dmjargon.webenfolds.com/" onload="actionShow()"></iframe>
+    </external>
+    <div id="swapMenu">
+        <span>Right swap here to open menu</span>
+    </div>
+<!-- END Content -->
+</div>
 
-<!------END COntent-------->
-</div><!----Body Base----->
-
-</div><!----Container----->
+</div><!-- Container -->
+<script>
+function actionShow(){
+setTimeout(removeLoading, 1999);
+}
+</script>
 </body>
 </html>

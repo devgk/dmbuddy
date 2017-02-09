@@ -11,7 +11,7 @@
 <!--xx-->
 
 <p class="menu">
-    <a href="../az-jargon/dmjargon.html">DM reference</a>
+    <a href="dmjargon.html">DM reference</a>
 </p>
     
 <p class="menu">

@@ -31,7 +31,7 @@ color: #0086B5;
 }
 </style>
     
-<link rel="stylesheet" href="../az-extra/corefiles/domain.css">
+<link rel="stylesheet" href="../styles/iframe.css">
     
 <title>Domain Search</title>
 
@@ -68,7 +68,7 @@ color: #0086B5;
         <span>Right swap here to open menu</span>
     </div>
     <external>
-    <iframe id="domain" src="https://axilacademy.com/resources/domain-chk.php" onload="alterDomain()"></iframe>
+    <iframe id="domain" src="https://axilacademy.com/resources/domain-chk.php" onload="actionShow()"></iframe>
     </external>
     <div id="swapMenu">
         <span>Right swap here to open menu</span>
@@ -78,7 +78,9 @@ color: #0086B5;
 
 </div><!-- Container -->
 <script>
-removeLoading();
+function actionShow(){
+setTimeout(removeLoading, 1999);
+}
 </script>
 </body>
 </html>

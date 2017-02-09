@@ -11,11 +11,11 @@
 <!--xx-->
 
 <p class="menu">
-    <a href="dmjargon.html">DM reference</a>
+    <a href="../az-jargon/dmjargon.html">DM reference</a>
 </p>
     
 <p class="menu">
-    <a href="dmupdates.html">DM updates</a>
+    <a href="../az-jargon/dmupdates.html">DM updates</a>
 </p>        
 
 <!--xx-->
