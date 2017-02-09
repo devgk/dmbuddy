@@ -73,17 +73,31 @@ document.getElementById('draw').onclick = function () { toggleMenu(1) };
 }
 function toggleSubMenu(num){
 x = num;
+//-------------menu1
 if (x == 1){
-document.getElementById('subMenu').style.display = 'block';
-document.getElementById('plus').style.webkitTransform = 'rotate(45deg)';
-document.getElementById('plus').style.backgroundColor = '#E36C46';
-document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(0) };
+document.getElementById('subMenu01').style.display = 'block';
+document.getElementById('plus01').style.webkitTransform = 'rotate(45deg)';
+document.getElementById('plus01').style.backgroundColor = '#E36C46';
+document.getElementById('subMenuCont01').onclick = function () { toggleSubMenu(0) };
 }
 if (x == 0){
-document.getElementById('subMenu').style.display = 'none';
-document.getElementById('plus').style.webkitTransform = 'rotate(0)';
-document.getElementById('plus').style.backgroundColor = '#FBD75B';
-document.getElementById('subMenuCont').onclick = function () { toggleSubMenu(1) };
+document.getElementById('subMenu01').style.display = 'none';
+document.getElementById('plus01').style.webkitTransform = 'rotate(0)';
+document.getElementById('plus01').style.backgroundColor = '#FBD75B';
+document.getElementById('subMenuCont01').onclick = function () { toggleSubMenu(1) };
+}
+//-------------menu2
+if (x == 2){
+document.getElementById('subMenu02').style.display = 'block';
+document.getElementById('plus02').style.webkitTransform = 'rotate(45deg)';
+document.getElementById('plus02').style.backgroundColor = '#E36C46';
+document.getElementById('subMenuCont02').onclick = function () { toggleSubMenu(3) };
+}
+if (x == 3){
+document.getElementById('subMenu02').style.display = 'none';
+document.getElementById('plus02').style.webkitTransform = 'rotate(0)';
+document.getElementById('plus02').style.backgroundColor = '#FBD75B';
+document.getElementById('subMenuCont02').onclick = function () { toggleSubMenu(2) };
 }
 }
 
