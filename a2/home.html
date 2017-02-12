@@ -12,52 +12,16 @@
 <meta http-equiv="pragma" content="no-cache" />
 <meta name="robots" content="noindex,nofollow">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+<!--Style Sheets-->
 <link rel="stylesheet" href="../styles/core.css">
+    
+<!--JS-->
 <script type="text/javascript" src="../functions/core.js"></script>
 <script type="text/javascript" src="../functions/hammer.min.js"></script>
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
-<style type="text/css">.logo::after{
-content: "MAKE MONEY ONLINE";
-display: block;
-width: 145px;
-margin: 0 auto;
-margin-right: 5px;
-font-size: 12px;
-line-height: 10px;
-background-color: #fff;
-padding: 4px 5px;
-border-radius: 3px;
-color: #0086B5;
-}
-    
-#table-container {
-display: table;
-text-align: center;
-width: 100%;
-height: 100%;}
-#container {display: table-cell;
-vertical-align: middle;}
-#main {display: inline-block;}
-#somebackground {}
-.contentBase{}
-    
-.button {
-display: block;
-margin: 8px auto 0;
-font-size: 15px;
-line-height: 22px;
-padding: 10px;
-background-color: #FFC000;
-border-radius: 5px;
-cursor: pointer;
-color: #333;
-font-weight: bolder;
-text-decoration: none;
-}
 
-</style>
-
-<title>MMO | Landing Page</title>
+<title>Make Money Online | Landing Page</title>
 
 </head>
 <body>
@@ -69,7 +33,7 @@ text-decoration: none;
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
     <img src="../images/drawer.png">
     </div>
-    <a href="#" onClick="resetObjective();" class="logo">DM BUDDY</a>
+    <a href="#" id="logo" onClick="resetObjective();" class="logo">DM BUDDY</a>
 </div>
 
 <!-- Navigation -->    
@@ -87,7 +51,7 @@ text-decoration: none;
 <!-----Inner content------->
     
     <div id="innerContent">
-
+        
         <div class="grid">
             <div id="table-container">
             <div id="container">
@@ -95,8 +59,8 @@ text-decoration: none;
             <div id="somebackground">
             <div id="base" class="contentBase">
                 <h1>Under Construction</h1>
-                <p>Please read business promotion.<br>We will soon update the app with more content.</p>
-                <a href="../swt.html" class="button">Switch Objective</a>
+                <p>I am working on it.<br>Will soon update the app with more content.</p>
+                <a onClick="business();" class="button">Switch Objective</a>
                 <script>
                 removeLoading();
                 </script>

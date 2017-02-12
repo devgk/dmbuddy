@@ -188,6 +188,18 @@ font-size: 25px;
 line-height: 25px;
 text-decoration: none;
 }
+.logo::after{
+display: block;
+width: 145px;
+margin: 0 auto;
+margin-right: 5px;
+font-size: 12px;
+line-height: 10px;
+background-color: #fff;
+padding: 4px 5px;
+border-radius: 3px;
+color: #0086B5;
+}
 
 /*--------------Left Menu---------------*/
 .headerLeft{
@@ -606,7 +618,6 @@ position: absolute;
 }
 }
 
-
 /*---------------------------------------------*/
 .headImg{
 width: 100%;
@@ -682,7 +693,7 @@ line-height: 20px;
 margin: 17px auto 2px;
 }
 
-/*----------------------------------------------*/
+/*-----------------External---------------------*/
 #swapMenu{
 display: block;
 width: 100%;
@@ -701,4 +712,59 @@ padding: 3px 10px;
 background-color: #F7F7F7;
 border-radius: 5px;
 border: 2px solid #E7E6E6;
+}
+#appframe {
+display: block;
+width: 100%; 
+min-width: 320px;
+min-height: 400px;
+height: calc(100% - 170px);
+border: 0;
+margin: 0;
+overflow: hidden;
+}
+#tawk_58960c3d0027be0a6e294c3d{
+display: block;
+width: 100%; 
+min-width: 320px;
+min-height: 400px;
+height: calc(100% - 120px);
+border: 0;
+margin: 0;
+overflow: hidden;
+}
+external{
+width: 100%;
+overflow-x: scroll;
+overflow-y: auto;
+display: block;
+padding: 0;
+overflow: hidden;
+}
+
+/*--Center Align---*/
+#table-container {
+display: table;
+text-align: center;
+width: 100%;
+height: 100%;
+}
+#container {
+display: table-cell;
+vertical-align: middle;
+}
+#main {
+display: inline-block;
+}
+.button {
+display: block;
+margin: 8px auto 0;
+font-size: 15px;
+padding: 8px;
+background-color: #FFC000;
+border-radius: 5px;
+cursor: pointer;
+color: #333;
+font-weight: bolder;
+text-decoration: none;
 }

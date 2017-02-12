@@ -13,7 +13,7 @@ if(x==01){
         this.responseText;
     }
     };
-    xhttp.open("GET", "chapter-1-1.txt", true);
+    xhttp.open("GET", "chapter-1-1.data", true);
     xhttp.send();
 }
 if(x==02){
@@ -24,7 +24,7 @@ if(x==02){
         document.getElementById("innerContent").innerHTML = this.responseText;
     }
     };
-    xhttp.open("GET", "chapter-1-2.txt", true);
+    xhttp.open("GET", "chapter-1-2.data", true);
     xhttp.send();
 }
 if(x==03){
@@ -35,7 +35,7 @@ if(x==03){
         document.getElementById("innerContent").innerHTML = this.responseText;
     }
     };
-    xhttp.open("GET", "chapter-1-3.txt", true);
+    xhttp.open("GET", "chapter-1-3.data", true);
     xhttp.send();
 }
 if(x==04){
@@ -46,7 +46,7 @@ if(x==04){
         document.getElementById("innerContent").innerHTML = this.responseText;
     }
     };
-    xhttp.open("GET", "chapter-1-4.txt", true);
+    xhttp.open("GET", "chapter-1-4.data", true);
     xhttp.send();
 }
 if(x==05){
@@ -57,7 +57,7 @@ if(x==05){
         document.getElementById("innerContent").innerHTML = this.responseText;
     }
     };
-    xhttp.open("GET", "chapter-1-5.txt", true);
+    xhttp.open("GET", "chapter-1-5.data", true);
     xhttp.send();
 }
 return null;

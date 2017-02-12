@@ -18,7 +18,8 @@ border-radius: 5px;
 border: 2px solid #E7E6E6;
 }
 
-#domain{
+#appframe,
+#tawk_58960c3d0027be0a6e294c3d {
 display: block;
 width: 100%; 
 min-width: 320px;
