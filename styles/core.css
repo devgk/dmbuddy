@@ -181,7 +181,7 @@ transition: background-color .4s;
 }
 .logo{
 display: block;
-width: 150px;
+width: 180px;
 margin: 0 auto;
 margin-right: 0;
 font-size: 25px;
@@ -190,7 +190,7 @@ text-decoration: none;
 }
 .logo::after{
 display: block;
-width: 145px;
+width: 175px;
 margin: 0 auto;
 margin-right: 5px;
 font-size: 12px;
