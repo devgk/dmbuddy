@@ -1,34 +1,35 @@
 <!DOCTYPE HTML SYSTEM>
 <html>
 <head>
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//google-analytics.com">
 <link rel="dns-prefetch" href="//www.google-analytics.com">
 <link rel="dns-prefetch" href="//ssl.google-analytics.com">
-<meta http-equiv="cache-control" content="max-age=0" />
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="expires" content="0" />
-<meta http-equiv="pragma" content="no-cache" />
 <meta name="robots" content="noindex,nofollow">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 
-<!--Style Sheets-->
-<link rel="stylesheet" href="../styles/core.css">
-    
 <!--JS-->
-<script type="text/javascript" src="../functions/core.js"></script>
 <script type="text/javascript" src="../functions/hammer.min.js"></script>
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
+
+<!--Custom Scripts-->
+<link rel="stylesheet" href="../styles/core.css">
+<script type="text/javascript" src="../functions/core.js?_=233"></script>
 
 <title>Business Promotion | Landing Page</title>
 
 </head>
 <body>
 <div class="container">
-    
-<div class="fixedElement loadingScreen" id="loadingScreen"><div class="glowLoad"></div></div>
 
+<!--LoadingScreen-->    
+<div class="fixedElement loadingScreen" id="loadingScreen">
+    <div class="glowLoad"></div>
+</div>
+
+<!--TopHeader-->
 <div class="fixedElement header">
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
     <img src="../images/drawer.png">
@@ -47,30 +48,31 @@
 <!-- END Menu -->
 </div>
 
+<!--Content-->
 <div class="bodyBase transtionElement" id="bodyBase"> 
 <!-----Inner content------->
-    
-    <div id="innerContent">
+<div id="innerContent">
+       
         <img class="headImg" src="../images/business-home.jpg" onload="removeLoading()">
         <div class="startCourse">
         <div class="grid">
             <div class="headCTA">
-                <ul>
-                <li>Explicitly Created for Businessman</li>
-                <li>Learn To Promote Business Online</li>
-                <li>Completely Free Course</li>
-                <li>Keep Track of Latest DM Updates</li>
-                </ul>
-                <h5>Digital Marketing Course for Business Promotion</h5>
-                <a class="whiteButton" href="chapter-1.html">Take Course</a>
+                <h5>Digital Marketing Course for <span>Business Promotion</span></h5>
+                <a class="whiteButton" href="chapter-1.html">Start Learning</a>
             </div>
         </div>
         </div>
-    </div>
-
+        <div class="grid">
+        <message>
+        <img src="../images/bob.png"/>
+            <p><b>Hello, friends!</b> You have selected the objective "Business Promotion". It is explicitly created for the businessman. It will guide and help you in your digital marketing campaign. Start learning to promote your business online.</p>
+        </message>
+        </div>
+        
+</div>
 <!------END COntent-------->
-</div><!----Body Base----->
+</div>
 
-</div><!----Container----->
+</div>
 </body>
 </html>

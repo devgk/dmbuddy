@@ -1,4 +1,9 @@
-::-webkit-scrollbar {width: 0;}
+/*-----------Initial--------------------*/
+::-webkit-scrollbar,
+::-webkit-scrollbar-track  {
+display: none;
+width: 0;
+}
 .fixedElement{
 position: fixed;
 -webkit-backface-visibility: hidden;
@@ -14,82 +19,59 @@ top:0;
 left: 0;
 width: 100%;
 height: 100%;
-background-position: center center;
-background: #333 url(http://dmbuddy-app.webenfolds.com/images/background.png);
-background-repeat: repeat;
-background-position: center;
-background-size: 150px;
+background: #333;
 z-index: 9999999;
 opacity: 1;
--webkit-transition: opacity .15s;
-transition: opacity .15s;
-}
-.glowLoad, .maskDark{
-width: 100%;
-height: 100%;
+-webkit-transition: opacity .2s;
+transition: opacity .2s;
 }
 .glowLoad{
-width: 40px;
-height: 40px;
-display: block;
 position: absolute;
-top: 50%;
-left: 50%;
-margin-top: -20px;
-margin-left: -20px;
-border-radius: 50%;
-text-align: center;
-line-height: 80px;
-font-weight: bold;
-color: #333;
-background-color: #FFC000;
-}
-.glowLoad::after{
-content: "";
 display: block;
-position: absolute;
-top: 50%;
-left: 50%;
+height: 30px;
+width: 30px;
+border: 8px solid #FFC000;
+border-right-color: transparent;
 border-radius: 50%;
-width: 80px;
-height: 80px;
-margin-top: -45px;
-margin-left: -45px;
-border: 5px solid #FFC000;
--webkit-animation: gblink .3s infinite;
-animation: gblink .3s infinite;
+top: 50%;
+right: 0;
+bottom: 0;
+left: 50%;
+margin: -24px 0 0 -24px;
+-webkit-animation: .75s rotate-forever infinite;
+animation: .75s rotate-forever infinite;
 }
-@-webkit-keyframes gblink{
-    0%{
-        width: 40px;
-        height: 40px;
-        margin-top: -25px;
-        margin-left: -25px;
-        opacity: 1;
-    }
-    100%{
-        width: 160px;
-        height: 160px;
-        margin-top: -85px;
-        margin-left: -85px;
-        opacity: 0;
-    }
+@-webkit-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
-@keyframes gblink{
-    0%{
-        width: 40px;
-        height: 40px;
-        margin-top: -25px;
-        margin-left: -25px;
-        opacity: 1;
-    }
-    100%{
-        width: 160px;
-        height: 160px;
-        margin-top: -85px;
-        margin-left: -85px;
-        opacity: 0;
-    }
+@keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 body, html {
@@ -167,4 +149,7 @@ cursor: pointer;
 color: #333;
 font-weight: bolder;
 text-decoration: none;
+}
+.grey {
+background-color: #bbb !important;
 }

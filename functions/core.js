@@ -1,9 +1,10 @@
 //The moment you try to simply the technologies, its becomes more complicated!
 //If you spend too much time thinking about a thing, you’ll never get it done.
+//I love you SAM. You are my life.
 
 //Create Notification
 function createNotify() {
-document.cookie = "notify=3;path=/";
+document.cookie = "notify=5;path=/";
 document.cookie = "notifyRead=0;path=/";
 changePath();
 }
@@ -11,14 +12,17 @@ changePath();
 //n and m is a local variable
 var g; //Handles chat Loading
 var s; //Handles chat Rendering
-var v = '3'; //Notify Variable
+var v = '5'; //Notify Variable
 
 
 function startLoading() {
 document.getElementById("loadingScreen").style.display = "block";
 }
 function removeLoading() {
-    setTimeout(noLoad, 10);
+    try {
+        zoomimg();
+    }catch (err){}
+    setTimeout(noLoad, 200);
 }
 function noLoad() {
     document.getElementById('loadingScreen').style.opacity = '0';
@@ -133,7 +137,7 @@ function createNav(n) {
                 document.getElementById("innerMenu").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "nav1.data", true);
+        xhttp.open("GET", "nav1.data?_=" + new Date().getTime(), true);
         xhttp.send();
     }
     if (n == 2) {
@@ -144,7 +148,7 @@ function createNav(n) {
                 document.getElementById("innerMenu").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "nav2.data", true);
+        xhttp.open("GET", "nav2.data?_=" + new Date().getTime(), true);
         xhttp.send();
     }
     if (n == 3) {
@@ -155,7 +159,7 @@ function createNav(n) {
                 document.getElementById("innerMenu").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "nav3.data", true);
+        xhttp.open("GET", "nav3.data?_=" + new Date().getTime(), true);
         xhttp.send();
     }
 }
@@ -348,9 +352,7 @@ function notify() {
         if (m == '0') {
             showNotify();
         }
-        else {
-            
-        }
+        else {}
     }
     else {
         createNotify();
