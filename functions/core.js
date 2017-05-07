@@ -4,7 +4,7 @@
 
 //Create Notification
 function createNotify() {
-document.cookie = "notify=5;path=/";
+document.cookie = "notify=6;path=/";
 document.cookie = "notifyRead=0;path=/";
 changePath();
 }
@@ -12,7 +12,7 @@ changePath();
 //n and m is a local variable
 var g; //Handles chat Loading
 var s; //Handles chat Rendering
-var v = '5'; //Notify Variable
+var v = '6'; //Notify Variable
 
 
 function startLoading() {
