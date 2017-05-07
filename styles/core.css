@@ -992,6 +992,9 @@ margin: 20px auto 25px;
 height: 0;
 border-bottom: 4px dotted #ccc;
 }
+#hotcontent{
+z-index: -99;
+}
 
 /*---Extrenal Resources---*/
 a.elink{
