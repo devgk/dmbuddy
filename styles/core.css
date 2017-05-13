@@ -315,12 +315,28 @@ margin-left: 0;
 }
 .logoImg {
 display: block;
-width: 100%;
-margin: 25px 0 30px;
+width: 140px;
+margin: 30px auto 25px;
 text-align: center;
+border: 2px solid #3A3C3F;
+border-radius: 5px;
 }
 .logoImg img {
 width: 140px;
+}
+.logoImg::before{
+content: "V 1";
+display: block;
+color: #fff;
+margin: -11px auto -10px;
+margin-right: -15px;
+padding: 2px 0;
+width: 30px;
+text-align: center;
+background-color: #3A3C3F;
+font-size: 60%;
+border: 2px solid #242629;
+border-radius: 4px;
 }
 .headerLeft .menu{
 display: block;
@@ -886,7 +902,7 @@ min-height: 65px;
 color: #fff;
 width: 100%;
 border: 0;
-background-color: #555;
+background-color: #292624;
 border-radius: 7px;
 margin-bottom: 10px;
 }
@@ -901,7 +917,7 @@ padding: 0 5px 0 0;
 }
 .thtwo{
 width: calc(100% - 120px);
-background-color: #555;
+background-color: #292624;
 border-radius: 0 5px 5px 0;
 text-align: left;
 padding: 5px;
@@ -913,9 +929,9 @@ width: 44px;
 height: 44px;
 padding: 0;
 border-radius: 50%;
-background-image: url(../images/hot.gif);
-background-position: 50% calc(50% + 15px);
-background-size: 220px;
+background-image: url(../images/hot.png);
+background-position: 50%;
+background-size: 110%;
 }
 flame{
 margin: 3px 0 -16px -5px;
@@ -945,35 +961,38 @@ display: block;
 width: auto;
 height: auto;
 overflow: auto;
-background-color: #333;
+background: #242629 url("/images/background.png");
+background-size: 100px;
 padding: 10px;
 }
 .dmhot{
 width: 100%;
-max-width: 250px;
+max-width: 270px;
 margin: 5px auto;
-background-color: #FFC000;
 border-radius: 6px;
-padding: 5px;
+padding: 0 10px 0 0;
 }
 flamehd{
 display: inline-block;
-width: 60px;
-height: 60px;
+width: 80px;
+height: 80px;
 padding: 0;
+background-image: url(../images/hot.png);
+background-position: 50%;
+background-size: 110%;
+opacity: 0.8;
 border-radius: 50%;
-background-image: url(../images/hot.gif);
-background-position: 50% calc(50% + 20px);
-background-size: 300px;
+box-shadow: 0 0 4px 1px #000;
 }
 .hot1{
 width: 60px;
 }
 .hot2 p{
-color: #333;
+color: #FBD75B;
 margin-left: 5px;
 font-size: 280%;
 font-weight: bold;
+text-shadow: 0 0 5px #000;
 }
 .hotribbion{
 text-align: center;

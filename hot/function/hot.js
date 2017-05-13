@@ -142,17 +142,21 @@ if (this.readyState == 4 && this.status == 200) {
 }
 };
     
-if(x==011){
+if(x==001){
     startLoading();
-    xhttp.open("GET", "hot-1-1.htm?_=" + new Date().getTime(), true);
+    xhttp.open("GET", "hot-1.htm?_=" + new Date().getTime(), true);
 }
-if(x==021){
+if(x==002){
     startLoading();
-    xhttp.open("GET", "hot-2-1.htm?_=" + new Date().getTime(), true);
+    xhttp.open("GET", "hot-2.htm?_=" + new Date().getTime(), true);
 }
-if(x==031){
+if(x==003){
     startLoading();
-    xhttp.open("GET", "chapter-1-3.htm?_=" + new Date().getTime(), true);
+    xhttp.open("GET", "hot-3.htm?_=" + new Date().getTime(), true);
+}
+if(x==004){
+    startLoading();
+    xhttp.open("GET", "hot-4.htm?_=" + new Date().getTime(), true);
 }
     
 xhttp.send();
