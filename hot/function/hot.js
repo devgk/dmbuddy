@@ -131,6 +131,21 @@ try {
     });
 } catch (err){}  //09 - image 10
 }
+function setupHot(){
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("hotContent").innerHTML =
+        this.responseText;
+}
+};
+xhttp.open("GET", "hot.hxx?_=" + new Date().getTime(), true);   
+    
+xhttp.send();
+window.location = "#";
+removeLoading();
+return null;
+}
 
 function hot(num) {
 x=num;
@@ -141,25 +156,80 @@ if (this.readyState == 4 && this.status == 200) {
         this.responseText;
 }
 };
+startLoading();
+xhttp.open("GET", "hot-" + num + ".htm?_=" + new Date().getTime(), true);
     
-if(x==001){
-    startLoading();
-    xhttp.open("GET", "hot-1.htm?_=" + new Date().getTime(), true);
+xhttp.send();
+window.location = "#";
+return null;
 }
-if(x==002){
-    startLoading();
-    xhttp.open("GET", "hot-2.htm?_=" + new Date().getTime(), true);
+
+function hotNav(data){
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("hotContent").innerHTML =
+        this.responseText;
 }
-if(x==003){
-    startLoading();
-    xhttp.open("GET", "hot-3.htm?_=" + new Date().getTime(), true);
+};
+startLoading();
+if(data == 1){
+xhttp.open("GET", "hot.hxx?_=" + new Date().getTime(), true);
+document.getElementById("subTopic-1").className = "active";
+document.getElementById("subTopic-2").className = "none";
+document.getElementById("subTopic-3").className = "none";
+document.getElementById("subTopic-4").className = "none";
+document.getElementById("subTopic-5").className = "none";
+document.getElementById("subTopic-6").className = "none";
+}    
+if(data == 2){
+xhttp.open("GET", "hot-wp.hxx?_=" + new Date().getTime(), true);
+document.getElementById("subTopic-1").className = "none";
+document.getElementById("subTopic-2").className = "active";
+document.getElementById("subTopic-3").className = "none";
+document.getElementById("subTopic-4").className = "none";
+document.getElementById("subTopic-5").className = "none";
+document.getElementById("subTopic-6").className = "none";
+}    
+if(data == 3){
+xhttp.open("GET", "hot-sm.hxx?_=" + new Date().getTime(), true);
+document.getElementById("subTopic-1").className = "none";
+document.getElementById("subTopic-2").className = "none";
+document.getElementById("subTopic-3").className = "active";
+document.getElementById("subTopic-4").className = "none";
+document.getElementById("subTopic-5").className = "none";
+document.getElementById("subTopic-6").className = "none";
+}    
+if(data == 4){
+xhttp.open("GET", "hot-seo.hxx?_=" + new Date().getTime(), true);
+document.getElementById("subTopic-1").className = "none";
+document.getElementById("subTopic-2").className = "none";
+document.getElementById("subTopic-3").className = "none";
+document.getElementById("subTopic-4").className = "active";
+document.getElementById("subTopic-5").className = "none";
+document.getElementById("subTopic-6").className = "none";
 }
-if(x==004){
-    startLoading();
-    xhttp.open("GET", "hot-4.htm?_=" + new Date().getTime(), true);
+if(data == 5){
+xhttp.open("GET", "hot-ad.hxx?_=" + new Date().getTime(), true);
+document.getElementById("subTopic-1").className = "none";
+document.getElementById("subTopic-2").className = "none";
+document.getElementById("subTopic-3").className = "none";
+document.getElementById("subTopic-4").className = "none";
+document.getElementById("subTopic-5").className = "active";
+document.getElementById("subTopic-6").className = "none";
+}
+if(data == 6){
+xhttp.open("GET", "hot-extra.hxx?_=" + new Date().getTime(), true);
+document.getElementById("subTopic-1").className = "none";
+document.getElementById("subTopic-2").className = "none";
+document.getElementById("subTopic-3").className = "none";
+document.getElementById("subTopic-4").className = "none";
+document.getElementById("subTopic-5").className = "none";
+document.getElementById("subTopic-6").className = "active";
 }
     
 xhttp.send();
 window.location = "#";
+removeLoading();
 return null;
 }

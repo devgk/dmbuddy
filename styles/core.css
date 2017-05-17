@@ -2,7 +2,6 @@
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track  {
 display: none;
-width: 0;
 }
 .fixedElement{
 position: fixed;
@@ -400,7 +399,8 @@ width: 100%;
 position: relative;
 display: block;
 width: 100%;
-min-height: 100%;
+min-height: 100vh;
+height: auto;
 background-color: #f7f7f7;
 margin-left: 0px;
 z-index: 99;
@@ -901,42 +901,62 @@ min-height: 65px;
 .hot{
 color: #fff;
 width: 100%;
-border: 0;
 background-color: #292624;
-border-radius: 7px;
 margin-bottom: 10px;
+border-collapse: collapse;
+border: 4px solid #393634;
+border-radius: 8px;
+overflow: hidden;
 }
-.thone{
-width: 114px;
+.th1{
+width: 40px;
 background-color: #E36C46;
 height: 50px;
-line-height: 50px;
 border-radius: 5px 0 0 5px;
 text-align: right;
-padding: 0 5px 0 0;
+padding: 0 4px 0 2px;
 }
-.thtwo{
+.th2{
+width: 65px;
+text-align: left;
+line-height: 20px;
+font-size: 16px;
+background-color: #E36C46;
+}
+.th2 span{
+line-height: 10px;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 1.2px;
+background-color: #fff;
+padding: 0 4px;
+border-radius: 3px;
+color: #E36C46;
+}
+.th3{
 width: calc(100% - 120px);
 background-color: #292624;
-border-radius: 0 5px 5px 0;
 text-align: left;
-padding: 5px;
+padding: 0 5px;
 font-weight: normal;
 }
-flame, fire{
-display: inline-block;
-width: 44px;
-height: 44px;
+flame, fire {
 padding: 0;
 border-radius: 50%;
 background-image: url(../images/hot.png);
 background-position: 50%;
-background-size: 110%;
+background-size: 110%;    
 }
 flame{
-margin: 3px 0 -16px -5px;
+display: block;
+width: 40px;
+height: 40px;
+margin: 2px;
 }
 fire{
+display: inline-block;
+width: 44px;
+height: 44px;
 margin: 0 0 -16px -2px;
 }
 
@@ -980,7 +1000,7 @@ padding: 0;
 background-image: url(../images/hot.png);
 background-position: 50%;
 background-size: 110%;
-opacity: 0.8;
+opacity: 0.85;
 border-radius: 50%;
 box-shadow: 0 0 4px 1px #000;
 }
@@ -990,30 +1010,47 @@ width: 60px;
 .hot2 p{
 color: #FBD75B;
 margin-left: 5px;
-font-size: 280%;
+font-size: 129%;
 font-weight: bold;
 text-shadow: 0 0 5px #000;
-}
-.hotribbion{
 text-align: center;
-margin: 10px auto;
-font-weight: bold;
-color: #666;
 }
-.hotribbion p{
-font-size: 180%;
+.hot2 p:nth-child(2){
+font-size: 123%;  
 }
-.hotribbion::after{
+.hot2 p:nth-child(2)::before{
 content: "";
 display: block;
-width: 100px;
-margin: 20px auto 25px;
-height: 0;
-border-bottom: 4px dotted #ccc;
+height: 3px;
+width: 100%;
+margin: 3px 0 0;
+border-radius: 3px;
+background-color: #eee;
+}
+.hotribbion{
+font-weight: bold;
+width: 100%;
+margin: 5px 0 15px;
+text-align: center;
+padding-bottom: 10px;
+border-bottom: 2px solid #bbb;
 }
 #hotcontent{
 z-index: -99;
 }
+.hotribbion a{
+display: inline-block;
+width: 70px;
+padding: 10px 5px;
+background-color: #292624;
+border-radius: 4px;
+margin: 5px 3px;
+color: #fff;
+}
+.hotribbion a.active{
+background-color: #E36C46;
+}
+
 
 /*---Extrenal Resources---*/
 a.elink{
