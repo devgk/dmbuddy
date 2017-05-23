@@ -1,13 +1,7 @@
-function runstep(){
-document.getElementById("hotsteps").className = "bodyBase hotsteps";
-document.getElementById("drawermenu").src = "../images/close.png";
-document.getElementById("draw").onclick = closestep;
-}
 function closestep(){
-document.getElementById("hotsteps").className = "bodyBase nohotsteps";
 document.getElementById("drawermenu").src = "../images/drawer.png";
 document.getElementById("draw").setAttribute('onClick', 'return toggleMenu(1);');
-window.location = "#";
+window.location = "../hot/home.html";
 }
 function zoomimg() {
 try {
@@ -160,6 +154,10 @@ startLoading();
 xhttp.open("GET", "hot-" + num + ".htm?_=" + new Date().getTime(), true);
     
 xhttp.send();
+    
+document.getElementById("drawermenu").src = "../images/close.png";
+document.getElementById("draw").onclick = closestep;
+    
 window.location = "#";
 return null;
 }
@@ -172,7 +170,7 @@ if (this.readyState == 4 && this.status == 200) {
         this.responseText;
 }
 };
-startLoading();
+
 if(data == 1){
 xhttp.open("GET", "hot.hxx?_=" + new Date().getTime(), true);
 document.getElementById("subTopic-1").className = "active";
@@ -230,6 +228,5 @@ document.getElementById("subTopic-6").className = "active";
     
 xhttp.send();
 window.location = "#";
-removeLoading();
 return null;
 }

@@ -319,7 +319,7 @@ function evsec() {
         s = s + 1;
     }
     if (s == 7200) {
-        window.location = "z_ask.html";
+        s = 0;
     }
     setTimeout(evsec, 500);
 }       //Render Chat Script
@@ -333,6 +333,8 @@ function alterTk() {
             document.getElementsByTagName('iframe')[0].contentWindow.document.getElementById('chatPanel').style.zIndex = "999999999999";
             g = 9;
             setTimeout(removeLoading, 100);
+            document.getElementById("drawermenu").src = "../images/close.png";
+            document.getElementById("draw").onclick = continueReading;
             setTimeout(evsec, 500);
         }
         catch (err) {
@@ -417,4 +419,22 @@ function gooa() {
         ga('send', 'pageview');
     }
     catch (err) {}
+}
+
+//-----Load Function------//
+function ajaxload(string) {
+str = string;
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("innerContent").innerHTML =
+        this.responseText;
+    }
+};
+startLoading();
+xhttp.open("GET", string + "?_=" + new Date().getTime(), true);
+    
+xhttp.send();
+window.location = "#";
+return null;
 }

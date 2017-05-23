@@ -32,7 +32,7 @@
 <!--TopHeader-->
 <div class="fixedElement header black">
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
-    <img src="../images/drawer.png">
+    <img id="drawermenu" src="../images/drawer.png">
     </div>
     <a href="#" id="logo" onClick="resetObjective();" class="logo">DM BUDDY</a>
 </div>
@@ -41,7 +41,7 @@
 <div class="fixedElement headerLeft" id="headerLeft">
 <!-- Inner Menu -->
     <div class="logoImg">
-    <a href="https://goo.gl/forms/IPJc80bvdOgPvQq32" target="_blank"><img src="../images/logov1.png"></a>
+    <a href="#" onCLick="continueReading();"><img src="../images/logov1.png"></a>
     </div>
     <div id="innerMenu">
     </div>
@@ -51,23 +51,19 @@
 <!--Content-->
 <div class="bodyBase transtionElement" id="bodyBase"> 
 <!-- Inner content -->
-    <div id="swapMenu">
-        <span>Right swap here to open menu</span>
-    </div>
     <external>
-    <iframe id="appframe" src="https://axilacademy.com/resources/domain-chk.php" onload="actionShow()"></iframe>
+    <iframe id="appframe" src="https://axilacademy.com/resources/domain-chk.php" onload="openIFrame()"></iframe>
     </external>
-    <div id="swapMenu">
-        <span>Right swap here to open menu</span>
-    </div>
 <!-- END Content -->
 </div>
 
 </div>
 <script>
-    function actionShow(){
-    setTimeout(removeLoading, 1999);
-    }
+function openIFrame(){
+setTimeout(removeLoading, 999);
+document.getElementById("drawermenu").src = "../images/close.png";
+document.getElementById("draw").onclick = continueReading;
+}
 </script>
 </body>
 </html>
