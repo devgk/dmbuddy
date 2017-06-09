@@ -15,8 +15,9 @@
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
    
 <!--Custom Scripts-->
-<link rel="stylesheet" href="../styles/core.css?_=234">
-<script type="text/javascript" src="../functions/core.js?_=234"></script>
+<link rel="stylesheet" href="../styles/cover.css?_=237">
+<link rel="stylesheet" href="../styles/core.css?_=237">
+<script type="text/javascript" src="../functions/core.js?_=237"></script>
     
 <title>DMBuddy Live Chat</title>
 
@@ -25,24 +26,24 @@
 <div class="container">
 
 <!--LoadingScreen-->
-<div class="fixedElement loadingScreen" id="loadingScreen">
-    <div class="glowLoad"></div>
+<div class="fixed loadingScreen transition" id="loadingScreen">
+    <div class="loading"></div>
 </div>
 
 <!--TopHeader-->
-<div class="fixedElement header black">
+<div class="fixed header black">
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
-    <img id="drawermenu" src="../images/drawer.png">
+    <img draggable="false" id="drawermenu" src="../images/drawer.png">
     </div>
     <a href="#" id="logo" onClick="resetObjective();" class="logo">DM BUDDY</a>
 </div>
 
 
 <!-- Navigation -->    
-<div class="fixedElement headerLeft" id="headerLeft">
+<div class="fixed headerLeft" id="headerLeft">
 <!-- Inner Menu -->
     <div class="logoImg">
-    <a href="#" onCLick="continueReading();"><img src="../images/logov1.png"></a>
+    <a href="#" onCLick="continueReading();"><img draggable="false" src="../images/logov1.png"></a>
     </div>
     <div id="innerMenu">
     </div>
@@ -50,7 +51,8 @@
 </div>
 
 <!--Content-->
-<div class="bodyBase transtionElement" id="bodyBase">
+<div class="bodyBase transtion" id="bodyBase">
+<div id="innerContent">
 
 <!-- Inner content -->
 <div id='tawk_58960c3d0027be0a6e294c3d'></div>
@@ -68,6 +70,7 @@ s0.parentNode.insertBefore(s1,s0);})();
 </script>
 <!--End of Tawk.to Script-->
 
+</div>
 </div>
 <!-- END Content -->
 

@@ -1,5 +1,5 @@
 <p class="menu" id="subMenuCont01" onClick="return toggleSubMenu(1);">
-    <a href="#">DM COURSE <img id="plus01" class="transtionElement" src="../images/plus.png"></a>
+    <a href="#">DM COURSE <img draggable="false" id="plus01" class="transtion" src="../images/plus.png"></a>
 </p>
 <p class="subMenu" id="subMenu01">
     <a href="../a1/chapter-1.html" class="subMenuList"><span class="smallnav">CH 01</span>Introduction</a>
@@ -25,10 +25,18 @@
 <!--xx-->
 
 <p class="menu" id="subMenuCont02" onClick="return toggleSubMenu(2);">
-    <a href="#">DM Resourses <img id="plus02" class="transtionElement" src="../images/plus.png"></a>
+    <a href="#">DM Resourses <img draggable="false" id="plus02" class="transtion" src="../images/plus.png"></a>
 </p>
+
+<!--xxxx-->
+
 <p class="subMenu" id="subMenu02">
-    <a href="../ez/dzdomaincheck.html" class="subMenuList">Instant Domain Check</a>
+    <a href="../ez/dzdomaincheck.html" class="subMenuList">Domain Uptime Status</a>
+    
+</p>
+
+<p class="subMenu" id="subMenu03">
+    <a href="../ez/dm-gapi.html" class="subMenuList">Quick Google Analytics</a>
     
 </p>
 

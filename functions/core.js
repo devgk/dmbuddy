@@ -166,15 +166,19 @@ function createNav(n) {
 function toggleMenu(num) {
     y = num;
     if (y == 1) {
-        document.getElementById('bodyBase').style.marginLeft = '270px';
+        document.getElementById('innerContent').className = 'covered';
         document.getElementById("draw").className = "navMenuLeft is-open";
+        document.getElementById('bodyBase').className = 'bodyBase fullCovered';
+        document.getElementById('bodyBase').style.marginLeft = '270px';
         document.getElementById('draw').onclick = function () {
             toggleMenu(0)
         };
     }
     if (y == 0) {
-        document.getElementById('bodyBase').style.marginLeft = '0px';
+        document.getElementById('innerContent').className = '';
         document.getElementById("draw").className = "navMenuLeft is-closed";
+        document.getElementById('bodyBase').className = 'bodyBase';
+        document.getElementById('bodyBase').style.marginLeft = '0px';
         document.getElementById('draw').onclick = function () {
             toggleMenu(1)
         };
@@ -194,7 +198,7 @@ function toggleSubMenu(num) {
     if (x == 0) {
         document.getElementById('subMenu01').style.display = 'none';
         document.getElementById('plus01').style.webkitTransform = 'rotate(0)';
-        document.getElementById('plus01').style.backgroundColor = '#FBD75B';
+        document.getElementById('plus01').style.backgroundColor = '#fece00';
         document.getElementById('subMenuCont01').onclick = function () {
             toggleSubMenu(1)
         };
@@ -202,6 +206,7 @@ function toggleSubMenu(num) {
     //-------------menu2
     if (x == 2) {
         document.getElementById('subMenu02').style.display = 'block';
+        document.getElementById('subMenu03').style.display = 'block';
         document.getElementById('plus02').style.webkitTransform = 'rotate(45deg)';
         document.getElementById('plus02').style.backgroundColor = '#E36C46';
         document.getElementById('subMenuCont02').onclick = function () {
@@ -210,13 +215,14 @@ function toggleSubMenu(num) {
     }
     if (x == 3) {
         document.getElementById('subMenu02').style.display = 'none';
+        document.getElementById('subMenu03').style.display = 'none';
         document.getElementById('plus02').style.webkitTransform = 'rotate(0)';
-        document.getElementById('plus02').style.backgroundColor = '#FBD75B';
+        document.getElementById('plus02').style.backgroundColor = '#fece00';
         document.getElementById('subMenuCont02').onclick = function () {
             toggleSubMenu(2)
         };
     }
-}
+}       //Add Submenu
 
 function resetObjective() {
     document.cookie = "userStatus=4;path=/";
@@ -261,6 +267,7 @@ function userSetup() {
 function selectObj() {
     document.getElementById('one').innerHTML = "Select your objective";
     document.getElementById('welcomeNote').style.display = "none";
+    document.getElementById('onNext').style.display = "none";
     document.getElementById('selObj').style.display = "none";
     document.getElementById('continue').style.display = "none";
     document.getElementById('choice1').style.display = "block";

@@ -1,7 +1,7 @@
 function closestep(){
 document.getElementById("drawermenu").src = "../images/drawer.png";
 document.getElementById("draw").setAttribute('onClick', 'return toggleMenu(1);');
-window.location = "../hot/home.html";
+window.history.back();
 }
 function zoomimg() {
 try {
@@ -142,7 +142,7 @@ return null;
 }
 
 function hot(num) {
-x=num;
+x=num
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
@@ -151,7 +151,7 @@ if (this.readyState == 4 && this.status == 200) {
 }
 };
 startLoading();
-xhttp.open("GET", "hot-" + num + ".htm?_=" + new Date().getTime(), true);
+xhttp.open("GET", "hot-" + x + ".htm?_=" + new Date().getTime(), true);
     
 xhttp.send();
     

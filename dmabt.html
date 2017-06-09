@@ -15,8 +15,9 @@
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
 
 <!--Custom Scripts-->
-<link rel="stylesheet" href="../styles/core.css">
-<script type="text/javascript" src="../functions/core.js?_=234"></script>
+<link rel="stylesheet" href="../styles/cover.css?_=237">
+<link rel="stylesheet" href="../styles/core.css?_=237">
+<script type="text/javascript" src="../functions/core.js?_=237"></script>
 
 <title>Business Promotion | Landing Page</title>
 
@@ -25,23 +26,23 @@
 <div class="container">
 
 <!--LoadingScreen-->    
-<div class="fixedElement loadingScreen" id="loadingScreen">
-    <div class="glowLoad"></div>
+<div class="fixed loadingScreen transition" id="loadingScreen">
+    <div class="loading"></div>
 </div>
 
 <!--TopHeader-->
-<div class="fixedElement header">
+<div class="fixed header">
     <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
-    <img src="../images/drawer.png">
+    <img draggable="false" src="../images/drawer.png">
     </div>
     <a href="#" id="logo" onClick="resetObjective();" class="logo">DM BUDDY</a>
 </div>
 
 <!-- Navigation -->    
-<div class="fixedElement headerLeft" id="headerLeft">
+<div class="fixed headerLeft" id="headerLeft">
 <!-- Inner Menu -->
     <div class="logoImg">
-    <a href="#" onCLick="continueReading();"><img src="../images/logov1.png"></a>
+    <a href="#" onCLick="continueReading();"><img draggable="false" src="../images/logov1.png"></a>
     </div>
     <div id="innerMenu">
     </div>
@@ -49,7 +50,7 @@
 </div>
 
 <!--Content-->
-<div class="bodyBase transtionElement" id="bodyBase"> 
+<div class="bodyBase transtion" id="bodyBase"> 
 <!-----Inner content------->
 <div id="innerContent">    
 <darkback>
@@ -59,7 +60,7 @@
         <table class="abtfirst">
             <tr>
                 <td class="alogo">
-                    <a href="#" onCLick="continueReading();"><img src="../images/logov1.png"></a>
+                    <a href="#" onCLick="continueReading();"><img draggable="false" src="../images/logov1.png"></a>
                 </td>
                 <td>
                     <span>DM BUDDY</span>
@@ -80,14 +81,14 @@
         <table class="abt">
             <tr>
                 <td class="author">
-                    <img src="../images/gk.jpg">
+                    <img draggable="false" src="../images/gk.jpg">
                 </td>
                 <td class="abttext">
                     <span>Gaurav Kumar</span>
                     <span>5+ Years of experience</span>
                     <table>
                         <tr>
-                            <td><img src="/images/check.png"></td>
+                            <td><img draggable="false" src="/images/check.png"></td>
                             <td><span>gk@webenfolds.com</span></td>
                         </tr>
                     </table>
@@ -100,7 +101,7 @@
         <a href="tel:7760597703">
         <table class="phonenumber">
             <tr>
-                <td class="iconbase"><img class="icon" src="/images/wa.png"></td>
+                <td class="iconbase"><img draggable="false" class="icon" src="/images/wa.png"></td>
                 <td><span>+91 7760597703</span></td>
             </tr>
         </table>
@@ -113,23 +114,32 @@
     <hr>
     
     <div class="grid">
+        <h2>Feedback</h2>
+        <p>More features are coming up. This application is under constant development. So, please provide feedback and suggestions regarding additional features that you would like to get added into the App. I will be glad if you can help me to improve this App by contributing additional informative content or by improving existing content. For that, you will be entitled to a contributor and your name will be listed on the APP.</p>
+        <div class="corelement">
+        <a class="elink" href="https://goo.gl/forms/5qcwpxMTf34GTSh63" target="_blank">Provide Feedback</a>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="grid">
         <h2>Technologies Used</h2>
         <p>Following technologies used to create this awsome application.</p>
         <table class="technology">
             <tr>
-                <td><img src="/images/android.png"></td>
+                <td><img draggable="false" src="/images/android.png"></td>
                 <td class="tex"><p>Android Developement Kit</p></td>
             </tr>
             <tr>
-                <td><img src="/images/core-java.png"></td>
+                <td><img draggable="false" src="/images/core-java.png"></td>
                 <td class="tex"><p>java</p></td>
             </tr>
             <tr>
-                <td><img src="/images/js.png"></td>
+                <td><img draggable="false" src="/images/js.png"></td>
                 <td class="tex"><p>java Script</p></td>
             </tr>
             <tr>
-                <td><img src="/images/we.png"></td>
+                <td><img draggable="false" src="/images/we.png"></td>
                 <td class="tex"><p>WE Core Engine</p></td>
             </tr>
         </table>

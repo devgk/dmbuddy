@@ -15,8 +15,8 @@
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
     
 <!--Custom Scripts-->
-<link rel="stylesheet" href="styles/cover.css?_=234">
-<script type="text/javascript" src="../functions/core.js?_=234"></script>
+<link rel="stylesheet" href="styles/cover.css?_=237">
+<script type="text/javascript" src="../functions/core.js?_=237"></script>
   
 <title>Switch Objective</title>
 
@@ -24,18 +24,19 @@
 <body>
 
 <!--LoadingScreen-->
-<div class="fixedElement loadingScreen" id="loadingScreen">
-    <div class="glowLoad"></div>
+<div class="fixed loadingScreen transition" id="loadingScreen">
+    <div class="loading"></div>
 </div>
 
 <!--Content-->
 <div id="table-container">
-<div id="container">
+<div id="container" class="backTexture">
 <div id="main">
-<div id="somebackground">
-<div id="infoBase" class="contentBase">
-    
-<h1>Select your objective</h1>
+<div id="notificationBack">
+<div id="infoBase" class="infoBase">
+     
+<h3>Select your objective</h3>
+<hr>
 <a id="choice1" class="button" onClick="business()">
     Promote my business
 </a>
