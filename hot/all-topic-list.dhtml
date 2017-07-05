@@ -1,0 +1,7 @@
+<ribbon class="gray"><h2>All Topics</h2></ribbon>
+
+<a href="../hot/hot.html?topic_code=other-1"><table class="hot dark"><tr>
+<th class="th1 red"><flame></flame></th>
+<th class="th2 red">DM HOT <span>other</span></th>
+<th class="th3">Hot Topic</th>
+</tr></table></a>

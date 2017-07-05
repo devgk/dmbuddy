@@ -13,10 +13,10 @@
 <!--JS-->
 <script type="text/javascript" src="../functions/hammer.min.js"></script>
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
-    
+
 <!--Custom Scripts-->
-<link rel="stylesheet" href="styles/cover.css?_=237">
-<script type="text/javascript" src="../functions/core.js?_=237"></script>
+<link rel="stylesheet" href="../styles/base.css?_=119">
+<script type="text/javascript" src="../functions/core.js?_=119"></script>
 
 <title>TFD - Landing Page</title>
 
@@ -24,49 +24,50 @@
 <body>
 
 <!--LoadingScreen-->  
-<div class="fixed loadingScreen transition" id="loadingScreen">
-    <div class="loading">
-    </div>
-</div>
+<loading id="loadingScreen" class="loadingScreen">
+    <div class="loading"></div>
+</loading>
 
-<!--Content-->
+<!--ContentBase-->  
 <div id="table-container">
 <div id="container" class="backTexture">
 <div id="main">
-<div id="notificationBack">
-<div id="infoBase" class="infoBase">
     
-<h3 id="one">Welcome back SPARKY!</h3>
-<hr>
-<p id="welcomeNote">
-Do you know? Digital Marketing is very easy. It's just like doing facebook and browsing websites.</p>
-<hr id="onNext">
+    <div id="notificationBack">
+    <div id="infoBase" class="infoBase">
 
-<a id="selObj" class="button" onClick="selectObj()">
-    Select Objective
-</a>
+    <h3 id="one">Welcome back SPARKY!</h3>
+    <hr>
+    <p id="welcomeNote">
+    Do you know? Digital Marketing is very easy. It's just like doing facebook and browsing websites.</p>
+    <hr id="onNext">
 
-<a id="continue" class="button" onClick="continueReading()">
-    Continue
-</a>
-<a id="choice1" class="button" onClick="business()">
-    Promote my business
-</a>
-<a id="choice2" class="button grey" onClick="blog()">
-    Making money online
-</a>
-<a id="choice3" class="button grey" onClick="pro()">
-    Become a webmaster
-</a>
+    <a id="selObj" class="button" onClick="selectObj()">
+        Select Objective
+    </a>
 
-</div>
-</div>
-</div>
-</div>
-</div>
+    <a id="continue" class="button" onClick="continueReading()">
+        Continue
+    </a>
+    <a id="choice1" class="button" onClick="business()">
+        Promote business
+    </a>
+    <a id="choice2" class="button grey" onClick="blog()">
+        Making money online
+    </a>
+    <a id="choice3" class="button grey" onClick="pro()">
+        Become a webmaster
+    </a>
 
+    </div>
+    </div>
+    
+</div>
+</div>
+</div>
+<!--Scripts-->
 <script>
-window.onload=function(){autoChk();};
+window.onload = autoChk();
 </script>
 </body>
 </html>

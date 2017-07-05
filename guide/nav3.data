@@ -1,0 +1,59 @@
+<p class="menu" id="subMenuCont01" onClick="return toggleSubMenu(1);">
+    <a href="#">DM COURSE</a>
+</p>
+
+<!--xx-->
+
+<p class="menu">
+    <a href="../dmp/dmp-home.html">DM Practical</a>
+</p>
+
+<p class="menu">
+    <a href="../hot/hot-home.html">DM HOT</a>
+</p>
+
+<p class="menu">
+    <a href="../guide/wp.html">WP Guide</a>
+</p>
+
+<p class="menu">
+    <a href="../ez/dmjargon.html">DM reference</a>
+</p>
+
+<!--xx-->
+
+<p class="menu" id="subMenuCont02" onClick="return toggleSubMenu(2);">
+    <a href="#">DM Resourses <img draggable="false" id="plus02" class="transtion" src="../images/plus.png"></a>
+</p>
+
+<!--xxxx-->
+
+<p class="subMenu" id="subMenu02">
+    <a href="../ez/dzdomaincheck.html" class="subMenuList">Domain Check</a>  
+</p>
+
+<p class="subMenu" id="subMenu03">
+    <a href="../ez/dm-gapi.html" class="subMenuList">Software & Tools</a>  
+</p>
+
+<!--xx-->      
+    
+<p class="menu">
+    <a href="../ez/dmask.html">ASK Buddies</a>
+</p>
+
+<!--xx-->
+
+<p class="menu">
+    <a href="/dm-givegold.html">Contribute</a>
+</p>
+
+<!--xx-->
+
+<p class="menu">
+    <a href="/dm-abt.html">About DM Buddy</a>
+</p>
+
+<!--Last Item-->
+<p class="menu">
+</p>

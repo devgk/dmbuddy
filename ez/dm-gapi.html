@@ -9,64 +9,68 @@
 <link rel="dns-prefetch" href="//ssl.google-analytics.com">
 <meta name="robots" content="noindex,nofollow">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    
+
 <!--JS-->
 <script type="text/javascript" src="../functions/hammer.min.js"></script>
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
-   
+
 <!--Custom Scripts-->
-<link rel="stylesheet" href="../styles/cover.css?_=237">
-<link rel="stylesheet" href="../styles/core.css?_=237">
-<script type="text/javascript" src="../functions/core.js?_=237"></script>
+<link rel="stylesheet" href="../styles/base.css?_=119">
+<link rel="stylesheet" href="../styles/content.css?_=119">
+<script type="text/javascript" src="../functions/core.js?_=119"></script>
     
-<title>DM Google Analytics</title>
+<title>DM Jargon</title>
 
 </head>
 <body>
-<div class="container">
-
-<!--LoadingScreen-->
-<div class="fixed loadingScreen transition" id="loadingScreen">
+<!--Loading-->
+<loading id="loadingScreen" class="loadingScreen">
     <div class="loading"></div>
-</div>
-
-<!--TopHeader-->
-<div class="fixed header black">
-    <div id="draw" class="navMenuLeft is-closed" onClick="return toggleMenu(1);">
-    <img draggable="false" id="drawermenu" src="../images/drawer.png">
+</loading>   
+<!--TopHeader-->   
+<header class="coral">
+    
+    <!-- Drawer Menu -->
+    <div class="drawer transition" onClick="window.history.back();">
+        <img id="drawermenu" draggable="false" src="../images/close.png">
     </div>
+    
+    <!-- Objective Logo -->
     <a href="#" id="logo" onClick="resetObjective();" class="logo">DM BUDDY</a>
-</div>
+    
+</header>
+<!--ContentBase-->  
+<div class="contentBase">
+    
+    <!--SideMenu-->
+    <navigation id="navigation" class="transitionFast">
+        
+        <!-- Logo Icon -->
+        <div class="logoImg">
+            <a href="#" onCLick="continueReading();"><img draggable="false" src="../images/logov1.png"></a>
+        </div>
+        
+        <!-- Ajax Menu -->
+        <div id="innerMenu" class="innerMenu"></div>
+        
+    </navigation>
+    
+    <!--Content-->
+    <content>
+        
+        <!-- AjaxContent -->
+        <div id="innerContent" class="innerContent"> 
+            <external>
+            <h2>Coming Soon</h2>
+            </external>
+        </div>
+        
+    </content>
 
-<!-- Navigation -->    
-<div class="fixed headerLeft" id="headerLeft">
-<!-- Inner Menu -->
-    <div class="logoImg">
-    <a href="#" onCLick="continueReading();"><img draggable="false" src="../images/logov1.png"></a>
-    </div>
-    <div id="innerMenu">
-    </div>
-<!-- END Menu -->
-</div>
-
-<!--Content-->
-<div class="bodyBase transtion" id="bodyBase">
-<div id="innerContent">
-<!-- Inner content -->
-    <external>
-    <iframe id="appframe" src="http://pujaservices.in/test/index.html" onload="openIFrame()"></iframe>
-    </external>
-<!-- END Content -->
-</div>
-</div>
 
 </div>
 <script>
-function openIFrame(){
-setTimeout(removeLoading, 999);
-document.getElementById("drawermenu").src = "../images/close.png";
-document.getElementById("draw").onclick = continueReading;
-}
+window.onload = startScript();
 </script>
 </body>
 </html>

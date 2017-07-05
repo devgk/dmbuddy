@@ -1,0 +1,73 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//google-analytics.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//ssl.google-analytics.com">
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+<!--JS-->
+<script type="text/javascript" src="../functions/hammer.min.js"></script>
+<script type="text/javascript" src="../functions/hammer-time.min.js"></script>
+
+<!--Custom Scripts-->
+<link rel="stylesheet" href="../styles/base.css?_=119">
+<link rel="stylesheet" href="../styles/content.css?_=119">
+<script type="text/javascript" src="../functions/core.js?_=119"></script>
+
+<title>Business Promotion | Landing Page</title>
+
+</head>
+<body>
+<!--Loading-->
+<loading id="loadingScreen" class="loadingScreen">
+    <div class="loading"></div>
+</loading>    
+<!--TopHeader-->   
+<header class="red">
+    
+    <!-- Drawer Menu -->
+    <div id="drawer" class="drawer transition" onClick="return toggleMenu(1);">
+        <img draggable="false" src="../images/drawer.png">
+    </div>
+    
+    <!-- Objective Logo -->
+    <a href="#" id="logo" onClick="resetObjective();" class="logo">DM BUDDY</a>
+    
+</header>
+<!--ContentBase-->  
+<div class="contentBase">
+    
+    <!--SideMenu-->
+    <navigation id="navigation" class="transitionFast">
+        
+        <!-- Logo Icon -->
+        <div class="logoImg">
+            <a href="#" onCLick="continueReading();"><img draggable="false" src="../images/logov1.png"></a>
+        </div>
+        
+        <!-- Ajax Menu -->
+        <div id="innerMenu" class="innerMenu"></div>
+        
+    </navigation>
+    
+    <!--Content-->
+    <cover id="cover"></cover>
+    <content id="content" class="transition">
+        
+        <!-- AjaxContent -->
+            <div id="innerContent" class="innerContent"></div>
+    
+    </content>
+    
+</div>
+<!--Scripts-->
+<script>
+window.onload = startScript();
+</script>
+</body>
+</html>

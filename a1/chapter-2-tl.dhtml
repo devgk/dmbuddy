@@ -1,0 +1,61 @@
+<ribbon class="gray"><h2>2<sup>nd</sup> Chapter - Topics List</h2></ribbon>
+
+<p class="topicList" id="tl1" onClick="loadTopic(1);">
+<span>2.1</span>
+Understanding websites and blog
+</p>
+
+<p class="topicList" id="tl2" onClick="loadTopic(2);">
+<span>2.2</span>
+Different type of websites
+</p>
+
+<p class="topicList" id="tl3" onClick="loadTopic(3);">
+<span>2.3</span>
+Website requirements
+</p>
+
+<p class="topicList" id="tl4" onClick="loadTopic(4);">
+<span>2.4</span>
+Understanding Domain Name
+</p>
+
+<p class="topicList" id="tl5" onClick="loadTopic(5);">
+<span>2.5</span>
+Understanding Web Hosting Server
+</p>
+
+<p class="topicList" id="tl6" onClick="loadTopic(6);">
+<span>2.6</span>
+Getting a website
+</p>
+
+<p class="topicList" id="tl7" onClick="loadTopic(7);">
+<span>2.7</span>
+Introduction to WordPress
+</p>
+
+<p class="topicList" id="tl8" onClick="loadTopic(8);">
+<span>2.8</span>
+Creating website with WordPress
+</p>
+
+<p class="topicList" id="tl9" onClick="loadTopic(9);">
+<span>2.9</span>
+Creating Blog
+</p>
+
+<p class="topicList" id="tl10" onClick="loadTopic(10);">
+<span>2.10</span>
+Understanding Social Media Presence
+</p>
+
+<p class="topicList" id="tl11" onClick="loadTopic(11);">
+<span>2.11</span>
+Creating Social Presence
+</p>
+
+<p class="topicList" id="tl12" onClick="loadTopic(12);">
+<span>2.12</span>
+Creating Business presence on maps
+</p>

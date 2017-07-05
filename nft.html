@@ -13,44 +13,45 @@
 <!--JS-->
 <script type="text/javascript" src="../functions/hammer.min.js"></script>
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
-    
+
 <!--Custom Scripts-->
-<link rel="stylesheet" href="styles/cover.css?_=237">
-<script type="text/javascript" src="../functions/core.js?_=237"></script>
+<link rel="stylesheet" href="../styles/base.css?_=119">
+<script type="text/javascript" src="../functions/core.js?_=119"></script>
     
 <title>Notification</title>
 
 </head>
 <body>
 
-<!--LoadingScreen--> 
-<div class="fixed loadingScreen transition" id="loadingScreen">
-    <div class="loading"></div>
+<!--LoadingScreen-->  
+<div class="loadingScreen" id="loadingScreen">
+    <div class="loading">
+    </div>
 </div>
 
-<!--Content-->
+<!--ContentBase-->  
 <div id="table-container">
 <div id="container" class="backTexture">
 <div id="main">
-<div id="notificationBack">
-<div id="infoBase" class="infoBase">
-    
-<h1>New Message</h1>
-<hr>
-<p id="msgNotify"></p>
-<hr>
-<a id="choice3" class="button" onClick="continueReading()">
-    Ok got it!
-</a>
+    <div id="notificationBack">
+    <div id="infoBase" class="infoBase">
 
-</div>
-</div>
-</div>
-</div>
-</div>
+    <h1>New Message</h1>
+    <hr>
+    <p id="msgNotify"></p>
+    <hr>
+    <a id="choice3" class="button" onClick="continueReading()">
+        Ok got it!
+    </a>
 
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<!--Scripts-->
 <script>
-
+notify();
 </script>
 </body>
 </html>

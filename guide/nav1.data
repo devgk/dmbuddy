@@ -11,7 +11,11 @@
 <!--xx-->
 
 <p class="menu">
-    <a href="../hot/home.html">DM HOT</a>
+    <a href="../dmp/dmp-home.html">DM Practical</a>
+</p>
+
+<p class="menu">
+    <a href="../hot/hot-home.html">DM HOT</a>
 </p>
 
 <p class="menu">
@@ -31,13 +35,11 @@
 <!--xxxx-->
 
 <p class="subMenu" id="subMenu02">
-    <a href="../ez/dzdomaincheck.html" class="subMenuList">Domain Uptime Status</a>
-    
+    <a href="../ez/dzdomaincheck.html" class="subMenuList">Domain Check</a>  
 </p>
 
 <p class="subMenu" id="subMenu03">
-    <a href="../ez/dm-gapi.html" class="subMenuList">Quick Google Analytics</a>
-    
+    <a href="../ez/dm-gapi.html" class="subMenuList">Software & Tools</a>  
 </p>
 
 <!--xx-->      
@@ -49,11 +51,15 @@
 <!--xx-->
 
 <p class="menu">
-    <a href="/dmabt.html">About DM Buddy</a>
+    <a href="/dm-givegold.html">Contribute</a>
 </p>
 
-<div class="space"></div>
-<div class="space"></div>
-<div class="space"></div>
-<div class="space"></div>
-<div class="space"></div>
+<!--xx-->
+
+<p class="menu">
+    <a href="/dm-abt.html">About DM Buddy</a>
+</p>
+
+<!--Last Item-->
+<p class="menu">
+</p>

@@ -1,11 +1,28 @@
-<img draggable="false" class="headImg" src="../images/business-home.jpg" onload="removeLoading()">
+<img draggable="false" class="headImg" src="../images/business-home.jpg">
 
 <div class="startCourse">
 <div class="grid">
-<div class="headCTA">
-    <h5>Digital Marketing Course for <span>Business Promotion</span></h5>
+    <table>
+    <tbody>
+    <tr>
+        <td class="firstSC">Objective</td>
+        <td class="secondSC">Business Promotion</td>
+    </tr>
+    <tr>
+        <td class="firstSC">Course</td>
+        <td class="secondSC">Digital Marketing Course for Business Promotion</td>
+    </tr>
+    <tr>
+        <td class="firstSC">Difficulty</td>
+        <td class="secondSC"><img/>Easy</td>
+    </tr>
+    <tr>
+        <td class="firstSC">Chapters</td>
+        <td class="secondSC">2</td>
+    </tr>
+    </tbody>
+    </table>
     <a class="button yellow" href="chapter-1.html">Start Learning</a>
-</div>
 </div>
 </div>
 
@@ -14,7 +31,6 @@
 <div class="titles">
 <div class="grid">
     <titles>
-        <img draggable="false" src="../images/iconset4.png">
         <a class="hotio" href="../hot/home.html"></a>
         <a class="wpio" href="../guide/wp.html"></a>
         <a class="refio" href="../ez/dmjargon.html"></a>
@@ -22,11 +38,16 @@
     </titles>
 </div>
 </div>
-    
+
 <div class="grid">
-    <div class="space"></div>
-    <message>
-    <img draggable="false" src="../images/bob.png"/>
-    <p><b>Hello, friends!</b> I am Bob. I am here to learn digital marketing with you guys. You should click on “Start Learning” to start learning digital marketing with me.</p>
+    <message id="a1-home" class="transition">
+    <img id="msgIMG" draggable="false" src="../images/bob.png"/>
+    <p id="msgP">
+    <t>Hello!</t>
+    <br>
+    I am Bob. Nice to see you. Click on "START LEARNING" button, to start learning digital marketing. And one more thing, currently this App is under construction.
+    <br>
+    </p>
+    <close id="msgCLOSE" onclick="closeMsg('a1-home');"></close>
     </message>
 </div>

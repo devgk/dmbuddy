@@ -13,46 +13,47 @@
 <!--JS-->
 <script type="text/javascript" src="../functions/hammer.min.js"></script>
 <script type="text/javascript" src="../functions/hammer-time.min.js"></script>
-    
+
 <!--Custom Scripts-->
-<link rel="stylesheet" href="styles/cover.css?_=237">
-<script type="text/javascript" src="../functions/core.js?_=237"></script>
+<link rel="stylesheet" href="../styles/base.css?_=119">
+<script type="text/javascript" src="../functions/core.js?_=119"></script>
   
 <title>Switch Objective</title>
 
 </head>
 <body>
 
-<!--LoadingScreen-->
-<div class="fixed loadingScreen transition" id="loadingScreen">
-    <div class="loading"></div>
+<!--LoadingScreen-->  
+<div class="loadingScreen" id="loadingScreen">
+    <div class="loading">
+    </div>
 </div>
 
-<!--Content-->
+<!--ContentBase-->  
 <div id="table-container">
 <div id="container" class="backTexture">
 <div id="main">
-<div id="notificationBack">
-<div id="infoBase" class="infoBase">
-     
-<h3>Select your objective</h3>
-<hr>
-<a id="choice1" class="button" onClick="business()">
-    Promote my business
-</a>
-<a id="choice2" class="button" onClick="blog()">
-    Making money online
-</a>
-<a id="choice3" class="button" onClick="pro()">
-    Become a webmaster
-</a>
+    <div id="notificationBack">
+    <div id="infoBase" class="infoBase">
 
-</div>
-</div>
-</div>
-</div>
-</div>
+    <h3>Select your objective</h3>
+    <hr>
+    <a id="choice1" class="button" onClick="business()">
+        Promote my business
+    </a>
+    <a id="choice2" class="button" onClick="blog()">
+        Making money online
+    </a>
+    <a id="choice3" class="button" onClick="pro()">
+        Become a webmaster
+    </a>
 
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<!--Scripts-->
 <script>
 window.onload=function(){
     showBase();
