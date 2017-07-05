@@ -211,7 +211,7 @@ navigation .menu {
     display: block;
     color: #ddd;
     line-height: 50px;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .subMenu {
