@@ -582,6 +582,7 @@ return null;
 //-----Extra Script
 function hammer() {
     var bodyBase = document.getElementById('content');
+    var navBase = document.getElementById('navigation');
     var coverBase = document.getElementById('cover');
     var mc = new Hammer(bodyBase);
     mc.on("swiperight", function () {
@@ -589,6 +590,10 @@ function hammer() {
     });
     var cc = new Hammer(coverBase);
     cc.on("swipeleft", function () {
+        setTimeout(toggleMenu, 10, 0);
+    });
+    var nc = new Hammer(coverBase);
+    nc.on("swipeleft", function () {
         setTimeout(toggleMenu, 10, 0);
     });
 }
