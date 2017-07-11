@@ -151,7 +151,8 @@ navigation {
     left: 0;
     width: 270px;
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #242629;
     letter-spacing: 1.1px;
     text-transform: uppercase;
