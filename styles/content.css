@@ -166,8 +166,7 @@ navigation {
     width: auto;
     height: auto;
     display: block;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     padding: 5px 0 25px;
 }
 
