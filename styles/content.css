@@ -28,19 +28,19 @@
     width: 180px;
     margin: 0 auto;
     margin-right: 0;
-    font-size: 26px;
-    line-height: 28px;
+    font-size: 27px;
+    line-height: 31px;
 }
 
 .logo::after {
     display: block;
     width: 170px;
-    margin: -1.5px auto 0;
+    margin: -2px auto 0;
     margin-right: 5px;
     font-size: 12px;
     line-height: 10px;
     background-color: #fff;
-    padding: 4px 5px;
+    padding: 4px 5px 2px;
     border-radius: 3px 0 0 3px;
     color: #0086B5;
 }
@@ -166,7 +166,8 @@ navigation {
     width: auto;
     height: auto;
     display: block;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 5px 0 25px;
 }
 
