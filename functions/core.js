@@ -592,7 +592,7 @@ function hammer() {
     cc.on("swipeleft", function () {
         setTimeout(toggleMenu, 10, 0);
     });
-    var nc = new Hammer(coverBase);
+    var nc = new Hammer(navBase);
     nc.on("swipeleft", function () {
         setTimeout(toggleMenu, 10, 0);
     });
