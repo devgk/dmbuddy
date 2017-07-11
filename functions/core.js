@@ -582,8 +582,9 @@ return null;
 //-----Extra Script
 function hammer() {
     var bodyBase = document.getElementById('content');
-    var navBase = document.getElementById('navigation');
     var coverBase = document.getElementById('cover');
+    var navBase = document.getElementById('navigation');
+    var headerBase = document.getElementById('topHeader');
     var mc = new Hammer(bodyBase);
     mc.on("swiperight", function () {
         setTimeout(toggleMenu, 10, 1);
@@ -594,6 +595,10 @@ function hammer() {
     });
     var nc = new Hammer(navBase);
     nc.on("swipeleft", function () {
+        setTimeout(toggleMenu, 10, 0);
+    });
+    var hc = new Hammer(headerBase);
+    hc.on("swipeleft", function () {
         setTimeout(toggleMenu, 10, 0);
     });
 }
