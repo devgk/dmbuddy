@@ -219,16 +219,17 @@ display: inline-block;
 
 /*-buttons-*/
 .button {
-display: block;
-height: 50px;
-width: 200px;
-text-align: center;
-line-height: 50px;
-text-transform: uppercase;
-font-weight: bold;
-margin: 10px auto;
-border-radius: 3px;
-cursor: pointer;
+    display: block;
+    width: 200px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+    padding: 17px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 3px;
+    cursor: pointer;
 }
 .button {
 background-color: #ffba3c;
